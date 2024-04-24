@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b125c8804d49debe6a64016fc44a1c, type: 3}
+  m_Name: Red Persecutor
+  m_EditorClassIdentifier: 
+  Name: Red Persecutor
+  SpeedMove: 1.1
+  SpeedRun: 1.25
+  JumpForce: 4.5
+  FallSpeed: 1
+  RollHeight: 1
+  RollDistance: 4
+  SlideLimitVelocity: 0.1
+  SlideSpeed: 30
+  Damage: 1.5
+  DamageThrowDamage: 0
+  ThrowForce: 0
+  CombatSlideDamage: 0
+  ComboAttackDamageModificator: 1.1
+  ComboInterval: 1000
+  SecondStrikeDelay: 25
+  MaxHealth: 100
+  CurrentHealth: 100
+  MaxStamina: 90
+  CurrentStamina: 90
+  StaminaRecovery: 0.35
+  StaminaUsage: 0.35
+  StaminaAttackUsageCoef: 10
+  StaminaRestoreDelay: 1150
+  MaxMana: 30
+  CurrentMana: 30
+  ManaUsage: 30
+  TimeToRespawn: 2000
+  SavePoints:
+  - {x: 7.640775e+27, y: 5.4e-43}
+  CanRoll: 1
+  ComboChanceAI: 10
+  RollChanceAI: 35

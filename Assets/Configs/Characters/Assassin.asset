@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b125c8804d49debe6a64016fc44a1c, type: 3}
+  m_Name: Assassin
+  m_EditorClassIdentifier: 
+  Name: Red Persecutor
+  SpeedMove: 1.2
+  SpeedRun: 1.5
+  JumpForce: 5
+  FallSpeed: 1
+  RollHeight: 1
+  RollDistance: 4
+  SlideLimitVelocity: 0.1
+  SlideSpeed: 30
+  Damage: 0.3
+  DamageThrowDamage: 0
+  ThrowForce: 0
+  CombatSlideDamage: 0
+  ComboAttackDamageModificator: 1.1
+  ComboInterval: 1000
+  SecondStrikeDelay: 25
+  MaxHealth: 30
+  CurrentHealth: 30
+  MaxStamina: 50
+  CurrentStamina: 50
+  StaminaRecovery: 0.35
+  StaminaUsage: 0.35
+  StaminaAttackUsageCoef: 10
+  StaminaRestoreDelay: 1150
+  MaxMana: 30
+  CurrentMana: 30
+  ManaUsage: 30
+  TimeToRespawn: 2000
+  SavePoints: []
+  CanRoll: 0
+  ComboChanceAI: 10
+  RollChanceAI: 50

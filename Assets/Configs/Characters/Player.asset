@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b125c8804d49debe6a64016fc44a1c, type: 3}
+  m_Name: Player
+  m_EditorClassIdentifier: 
+  Name: Knight
+  SpeedMove: 2
+  SpeedRun: 3.5
+  JumpForce: 4.5
+  FallSpeed: 1.35
+  RollHeight: 2.5
+  RollDistance: 5
+  SlideLimitVelocity: 0.1
+  SlideSpeed: 30
+  Damage: 1
+  DamageThrowDamage: 1.5
+  ThrowForce: 8
+  CombatSlideDamage: 10
+  ComboAttackDamageModificator: 1.5
+  ComboInterval: 750
+  SecondStrikeDelay: 25
+  MaxHealth: 80
+  CurrentHealth: 80
+  MaxStamina: 50
+  CurrentStamina: 50
+  StaminaRecovery: 0.3
+  StaminaUsage: 0.35
+  StaminaAttackUsageCoef: 7
+  StaminaRestoreDelay: 1000
+  MaxMana: 30
+  CurrentMana: 30
+  ManaUsage: 30
+  TimeToRespawn: 2000
+  SavePoints:
+  - {x: 6.2407537, y: -4.1668615}
+  CanRoll: 0
+  ComboChanceAI: 10
+  RollChanceAI: 35
