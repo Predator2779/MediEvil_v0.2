@@ -1,5 +1,6 @@
 ﻿using Character.CharacterControllers.Inputs;
 using Character.ComponentContainer;
+using Cinemachine;
 using Other.Follow;
 using UI;
 using UnityEngine;
@@ -9,7 +10,8 @@ namespace Builders.Creators
 {
     public class PlayerCreator : AbstractUnitCreator
     {
-        [SerializeField] protected Following _cameraPrefab;
+        [SerializeField] protected Camera _cameraPrefab;
+        [SerializeField] private CinemachineVirtualCamera _cinemachine;
         [SerializeField] protected ValueBarContainer _barContainer;
         [SerializeField] protected Image _weaponUi;
 
@@ -24,12 +26,10 @@ namespace Builders.Creators
         
         private void CreateCamera()
         {
-            var camera = Instantiate(
-                _cameraPrefab,
-                transform.position + _cameraPrefab.transform.position,
-                Quaternion.identity, _path);
-
-            camera.Target = _unit.transform;
+            Instantiate(_cameraPrefab, transform.position + _cameraPrefab.transform.position, Quaternion.identity, _path);
+            _cinemachine.Follow = _unit.transform;
+            _cinemachine.LookAt = _unit.transform;
+            // camera.Target = _unit.transform;
         }
 
         protected override void SetFields(PersonContainer personContainer)
