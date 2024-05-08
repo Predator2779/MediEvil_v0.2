@@ -58,7 +58,7 @@ namespace Character.StateMachine.CharacterStates.WarriorStates
                 baseDamage * GetVelocityModificator());
         }
 
-        private void DoDamage(Health health, float concreteDamage) => health.TakeDamage(concreteDamage);
+        private void DoDamage(Health health, float concreteDamage) => health.Decrease(concreteDamage);
 
         private float GetVelocityModificator() => Mathf.Abs(_warrior.Container.Movement.GetVelocity().x +
                                                             _warrior.Container.Movement.GetVelocity().y) *

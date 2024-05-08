@@ -6,42 +6,47 @@ namespace Character.ValueStorages
 {
     public class Stamina : ValueStorage
     {
-        public bool CanUse { get; private set; }  = true;
-        private PersonContainer PersonContainer { get; }
-
+        private int _staminaRestoreDelay;
         private bool _restoreIsDelayed;
 
-        public Stamina(PersonContainer personContainer, float currentValue, float maxValue) : base(currentValue, maxValue) 
+        public bool CanUse { get; private set; } = true;
+        
+        public Stamina(float currentValue, float maxValue, int staminaRestoreDelay) : base(currentValue, maxValue)
         {
-            PersonContainer = personContainer;
+            _staminaRestoreDelay = staminaRestoreDelay;
         }
 
-        public Stamina(PersonContainer personContainer, float currentValue, float maxValue, ValueBar bar) : base(currentValue, maxValue, bar)
+        public Stamina(float currentValue, float maxValue, int staminaRestoreDelay, ValueBar bar) 
+            : base(currentValue, maxValue, bar)
         {
-            PersonContainer = personContainer;
+            _staminaRestoreDelay = staminaRestoreDelay;
         }
 
+        public bool CanRestore() => CurrentValue < MaxValue && !_restoreIsDelayed;
+        
         public override void Increase(float value)
         {
             if (_restoreIsDelayed) return;
-            if (CurrentValue > MaxValue / 4)  CanUse = true;
+            if (CurrentValue > MaxValue / 4) CanUse = true;
             base.Increase(value);
         }
 
         public override void Decrease(float value)
         {
             if (!CanUse) return;
-            
+
             base.Decrease(value);
 
             if (CurrentValue > MinValue) return;
-            
+
             CanUse = false;
             _restoreIsDelayed = true;
-                 
-            Task.Delay(PersonContainer.Config.StaminaRestoreDelay).ContinueWith(_ => { CanUse = true; _restoreIsDelayed = false; });
-        }
 
-        public bool CanRestore() => CurrentValue < MaxValue && !_restoreIsDelayed;
+            Task.Delay(_staminaRestoreDelay).ContinueWith(_ =>
+            {
+                CanUse = true;
+                _restoreIsDelayed = false;
+            });
+        }
     }
 }

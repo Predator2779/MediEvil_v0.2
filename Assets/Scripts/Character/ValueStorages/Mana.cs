@@ -5,11 +5,13 @@ namespace Character.ValueStorages
 {
     public class Mana : Stamina
     {
-        public Mana(PersonContainer personContainer, float currentValue, float maxValue) : base(personContainer, currentValue, maxValue) 
+        public Mana(float currentValue, float maxValue, int manaRestoreDelay) 
+            : base(currentValue, maxValue, manaRestoreDelay) 
         {
         }
 
-        public Mana(PersonContainer personContainer, float currentValue, float maxValue, ValueBar bar) : base(personContainer, currentValue, maxValue, bar)
+        public Mana(float currentValue, float maxValue, int manaRestoreDelay, ValueBar bar) 
+            : base(currentValue, maxValue, manaRestoreDelay, bar)
         {
         }
     }

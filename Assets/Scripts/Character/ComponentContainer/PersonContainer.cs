@@ -43,9 +43,9 @@ namespace Character.ComponentContainer
 
         private void SetComponents()
         {
-            Health = new Health(this, Config.CurrentHealth, Config.MaxHealth, HealthBar);
-            Stamina = new Stamina(this, Config.CurrentStamina, Config.MaxStamina, StaminaBar);
-            Mana = new Mana(this, Config.CurrentMana, Config.MaxMana, ManaBar);
+            Health = new Health(Config.CurrentHealth, Config.MaxHealth, HealthBar);
+            Stamina = new Stamina(Config.CurrentStamina, Config.MaxStamina, Config.StaminaRestoreDelay, StaminaBar);
+            Mana = new Mana(Config.CurrentMana, Config.MaxMana, Config.StaminaRestoreDelay, ManaBar);
         }
 
         private void OnDestroy() => ItemHandler.OnWeaponPickedUp -= WeaponHandler.EquipWeapon;

@@ -5,6 +5,8 @@ namespace Character.ValueStorages
 {
     public abstract class ValueStorage
     {
+        private float _currentValue;
+        
         protected ValueStorage(float currentValue, float maxValue)
         {
             CurrentValue = currentValue;
@@ -19,19 +21,22 @@ namespace Character.ValueStorages
         }
 
         private ValueBar Bar { get; }
-        protected float MinValue { get; } = 0;
-        public float CurrentValue { get; private set; }
-        protected float MaxValue { get; }
 
-        public virtual void Increase(float value) =>
-            SetValue(Mathf.Clamp(CurrentValue + value, CurrentValue, MaxValue));
-
-        public virtual void Decrease(float value) =>
-            SetValue(Mathf.Clamp(CurrentValue - value, MinValue, CurrentValue));
-
-        private void SetValue(float value)
+        public float CurrentValue
         {
-            CurrentValue = value;
+            get => _currentValue;
+            set { if (value <= MaxValue && value >= MinValue) _currentValue = value; }
+        }
+
+        protected float MinValue { get; } = 0;
+        protected float MaxValue { get; }
+        
+        public virtual void Increase(float value) => AddValue(value);
+        public virtual void Decrease(float value) => AddValue(-value);
+
+        private void AddValue(float value)
+        {
+            CurrentValue += value;
             ChangeBar();
         }
 

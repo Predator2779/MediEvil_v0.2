@@ -12,8 +12,8 @@ namespace Damageables.Traps
         
         private void OnTriggerEnter2D(Collider2D other) => EnableTrap(other);
 
-        public void DoDamage(float personDamage) => _personContainer.Health.TakeDamage(personDamage);
-        public void DoDamage(Health health, float concreteDamage) => health.TakeDamage(concreteDamage);
+        public void DoDamage(float personDamage) => _personContainer.Health.Decrease(personDamage);
+        public void DoDamage(Health health, float concreteDamage) => health.Decrease(concreteDamage);
         private float GetDamageValue() => Random.Range(_damageMin, _damageMax);
 
         protected virtual void EnableTrap(Collider2D collider)

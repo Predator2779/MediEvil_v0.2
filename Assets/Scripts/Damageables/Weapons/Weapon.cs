@@ -141,7 +141,7 @@ namespace Damageables.Weapons
             }
         }
 
-        private void DoDamage(Health health, float concreteDamage) => health.TakeDamage(concreteDamage);
+        private void DoDamage(Health health, float concreteDamage) => health.Decrease(concreteDamage);
         private Vector2 GetPullVector() => _thrower.Container.transform.position - transform.position;
 
         private Vector2 GetDetectedPoint() =>
@@ -167,7 +167,6 @@ namespace Damageables.Weapons
             Mathf.Clamp(Vector2.Distance(transform.position, target.position), 0, Data.AttackRadius);
 
 #if UNITY_EDITOR
-
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.magenta;
@@ -176,7 +175,6 @@ namespace Damageables.Weapons
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(transform.position, 0.01f);
         }
-
 #endif
     }
 }
