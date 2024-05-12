@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="272fa73d-9c12-4abb-b38c-bc65d7e9d903" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MediEvil_v0.2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MediEvil_v0.2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControllers/AI/PersecutorAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControllers/AI/PersecutorAI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Classes/Person.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Classes/Person.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" afterDir="false" />
-    </list>
+    <list default="true" id="272fa73d-9c12-4abb-b38c-bc65d7e9d903" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
