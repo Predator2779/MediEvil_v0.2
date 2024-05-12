@@ -8,7 +8,7 @@ namespace Character.StateMachine.CharacterStates
 {
     public class DeathState : CharacterState
     {
-        private Person _person;
+        private readonly Person _person;
         private bool _isRespawned;
 
         public DeathState(Person person) : base(person.Container)
@@ -38,7 +38,7 @@ namespace Character.StateMachine.CharacterStates
             if (_person.Container.IsDeath) return;
             _person.Container.IsDeath = true;
 
-            _person.Describe();
+            // _person.Describe();
             PersonContainer.Movement.SetBodyType(RigidbodyType2D.Static);
 
             if (PersonContainer.IsPlayer)

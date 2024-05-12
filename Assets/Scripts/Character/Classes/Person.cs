@@ -6,8 +6,8 @@ namespace Character.Classes
 {
     public class Person
     {
+        private readonly PersonStateSet _personStateSet;
         public PersonContainer Container { get; }
-        private PersonStateSet _personStateSet;
 
         public Person(PersonContainer container)
         {

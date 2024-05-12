@@ -20,16 +20,15 @@ namespace Character.ValueStorages
             Bar = bar;
         }
 
-        private ValueBar Bar { get; }
-
-        public float CurrentValue
+        protected float CurrentValue
         {
             get => _currentValue;
-            set { if (value <= MaxValue && value >= MinValue) _currentValue = value; }
+            set => _currentValue = Mathf.Clamp(value, MinValue, MaxValue);
         }
 
         protected float MinValue { get; } = 0;
         protected float MaxValue { get; }
+        private ValueBar Bar { get; }
         
         public virtual void Increase(float value) => AddValue(value);
         public virtual void Decrease(float value) => AddValue(-value);

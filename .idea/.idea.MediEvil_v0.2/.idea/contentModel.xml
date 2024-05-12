@@ -1735,7 +1735,6 @@
             <e p="EmojiOne.json" t="Include" />
           </e>
         </e>
-        <e p="Transfer.cs" t="Include" />
       </e>
       <e p="MediEvil_v0.2.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
