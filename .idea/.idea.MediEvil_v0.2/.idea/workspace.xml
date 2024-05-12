@@ -20,12 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="272fa73d-9c12-4abb-b38c-bc65d7e9d903" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MediEvil_v0.2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MediEvil_v0.2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MediEvil_v0.2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MediEvil_v0.2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main_Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControllers/AI/PersecutorAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControllers/AI/PersecutorAI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Classes/Person.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Classes/Person.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/DeathState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/DeathState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/ValueStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/ValueStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,20 +33,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://D:/Work/maxembo/Scripts/Character/StateMachine/States/MovementState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://D:/Work/maxembo/Scripts/Character/StateMachine/States/IState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://D:/Work/maxembo/Scripts/Character/StateMachine/IStateSwitcher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://D:/Work/maxembo/Scripts/Character/StateMachine/CharacterStateMachine.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Damageables/Traps/Trap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Damageables/Weapons/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Mana.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Stamina.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/WarriorStates/CombatSlideState.cs" />
         <option value="$PROJECT_DIR$/Assets/Transfer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/DeathState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/Classes/Person.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/ValueStorage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControllers/AI/PersecutorAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/Classes/Person.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" />
       </list>
     </option>
   </component>

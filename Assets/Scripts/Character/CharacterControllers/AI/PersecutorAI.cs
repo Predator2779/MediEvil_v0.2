@@ -6,12 +6,12 @@ namespace Character.CharacterControllers.AI
 {
     public class PersecutorAI : Controller
     {
-        protected float _viewingRadius = 3;
-        protected float _runDistance = 2.5f;
-        protected float _walkDistance = 1.5f;
-        protected float _stayDistance = 0.5f;
-        protected LayerMask _layerMask = 3;
         protected Collider2D _target;
+        protected float _stayDistance = 0.5f;
+        private float _viewingRadius = 3;
+        private float _runDistance = 2.5f;
+        private float _walkDistance = 1.5f;
+        private LayerMask _layerMask = 3;
         
         private CapsuleCollider2D _capsule;
 
@@ -35,7 +35,6 @@ namespace Character.CharacterControllers.AI
         public override void Execute()
         {
             base.Execute();
-
             SetTempDirection();
             
             if (!HasTarget() || CanStay())

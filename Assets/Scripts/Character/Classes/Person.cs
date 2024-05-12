@@ -1,6 +1,7 @@
 ﻿using Character.ComponentContainer;
 using Character.StateMachine;
 using Character.StateMachine.StateSets;
+using Unity.VisualScripting;
 
 namespace Character.Classes
 {
@@ -23,13 +24,7 @@ namespace Character.Classes
             Container.Health.Falldown += FallDown;
             Container.Health.Die += Die;
         }
-
-        public void Describe()
-        {
-            Container.Health.Falldown -= FallDown;
-            Container.Health.Die -= Die;
-        }
-
+        
         public void Idle() => Container.StateMachine.ChangeState(_personStateSet.IdleState);
         public void Walk() => Container.StateMachine.ChangeState(_personStateSet.WalkState);
         public void Run() => Container.StateMachine.ChangeState(_personStateSet.RunState);

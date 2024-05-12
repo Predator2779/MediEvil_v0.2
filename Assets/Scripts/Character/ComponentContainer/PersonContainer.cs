@@ -31,16 +31,16 @@ namespace Character.ComponentContainer
         public Stamina Stamina { get; protected set; }
         public Mana Mana { get; protected set; }
 
+        private void Update() => Controller.Execute();
+        private void FixedUpdate() => Controller.FixedExecute();
+        
         public void Initialize()
         {
             ItemHandler.OnWeaponPickedUp += WeaponHandler.EquipWeapon;
             SetComponents();
             Controller.Initialize();
         }
-
-        private void Update() => Controller.Execute();
-        private void FixedUpdate() => Controller.FixedExecute();
-
+        
         private void SetComponents()
         {
             Health = new Health(Config.CurrentHealth, Config.MaxHealth, HealthBar);
