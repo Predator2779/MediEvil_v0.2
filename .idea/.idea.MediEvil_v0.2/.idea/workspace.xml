@@ -19,7 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="272fa73d-9c12-4abb-b38c-bc65d7e9d903" name="Default Changelist" comment="" />
+    <list default="true" id="272fa73d-9c12-4abb-b38c-bc65d7e9d903" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Web/TextLinkTransition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Web/TextLinkTransition.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MediEvil_v0.2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MediEvil_v0.2/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MediEvil_v0.2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MediEvil_v0.2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu_Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +38,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://D:/Work/maxembo/Scripts/Character/StateMachine/States/MovementState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://D:/Work/maxembo/Scripts/Character/StateMachine/States/IState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Web/LinkTransition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/Work/maxembo/Scripts/Character/StateMachine/IStateSwitcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://D:/Work/maxembo/Scripts/Character/StateMachine/CharacterStateMachine.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -49,6 +57,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/Classes/Person.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Web/LinkTransition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Web/TextLinkTransition.cs" />
       </list>
     </option>
   </component>

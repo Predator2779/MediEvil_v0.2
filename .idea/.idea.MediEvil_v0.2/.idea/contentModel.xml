@@ -15,7 +15,9 @@
           <e p="Samurai" t="Include" />
           <e p="Trees" t="Include" />
         </e>
-        <e p="Audio" t="Include" />
+        <e p="Audio" t="Include">
+          <e p="Music" t="Include" />
+        </e>
         <e p="Configs" t="Include">
           <e p="Characters" t="Include" />
           <e p="Weapons" t="Include" />
@@ -1468,6 +1470,10 @@
           <e p="UI" t="Include">
             <e p="ValueBarContainer.cs" t="Include" />
           </e>
+          <e p="Web" t="Include">
+            <e p="LinkTransition.cs" t="Include" />
+            <e p="TextLinkTransition.cs" t="Include" />
+          </e>
         </e>
         <e p="Sprites" t="Include">
           <e p="Icons" t="Include">
@@ -1509,9 +1515,6 @@
                   <e p="MovingPlatform.cs" t="Include" />
                 </e>
                 <e p="Texture" t="Include" />
-                <e p="Tileset Palette" t="Include">
-                  <e p="TP Ground" t="Include" />
-                </e>
               </e>
               <e p="Third Party" t="Include">
                 <e p="Lucid Editor" t="Include">
@@ -1682,9 +1685,8 @@
           <e p="Tilemap" t="Include">
             <e p="Palletes" t="Include" />
             <e p="Tiles" t="Include">
-              <e p="Decor" t="Include" />
               <e p="Ground" t="Include" />
-              <e p="TEST" t="Include" />
+              <e p="TP Ground" t="Include" />
             </e>
           </e>
         </e>
