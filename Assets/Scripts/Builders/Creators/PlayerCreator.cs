@@ -29,7 +29,6 @@ namespace Builders.Creators
             Instantiate(_cameraPrefab, transform.position + _cameraPrefab.transform.position, Quaternion.identity, _path);
             _cinemachine.Follow = _unit.transform;
             _cinemachine.LookAt = _unit.transform;
-            // camera.Target = _unit.transform;
         }
 
         protected override void SetFields(PersonContainer personContainer)

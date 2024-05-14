@@ -20,13 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="272fa73d-9c12-4abb-b38c-bc65d7e9d903" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/house-a.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/house-a.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/house-b.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/house-b.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/house-c.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/house-c.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MediEvil_v0.2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MediEvil_v0.2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level_Town.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level_Town.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/PlayerCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/PlayerCreator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +56,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Web/LinkTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Web/TextLinkTransition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/PlayerCreator.cs" />
       </list>
     </option>
   </component>
