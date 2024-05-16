@@ -22,6 +22,7 @@ namespace Builders.Creators
         private void StartCreator()
         {
             InstantiateUnitComponents();
+            SetSpawnPoint();
             SetController();
             SetWeapon();
             Initialize();
@@ -31,6 +32,7 @@ namespace Builders.Creators
 
         protected abstract void InstantiateUnitComponents();
         protected abstract void SetController();
+        protected void SetSpawnPoint() => _container.StartSpawnPoint = transform.position;
         private void Initialize() => _container.Initialize();
 
         protected void CreateUnit() => _unit = Instantiate(

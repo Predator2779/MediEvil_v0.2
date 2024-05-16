@@ -9,7 +9,8 @@ namespace Character.StateMachine.CharacterStates
     public class DeathState : CharacterState
     {
         private readonly Person _person;
-        private bool _isRespawned;
+        private delegate void Message();
+        private event Message _animComplete;
 
         public DeathState(Person person) : base(person.Container)
         {
@@ -20,13 +21,14 @@ namespace Character.StateMachine.CharacterStates
         public override void Enter()
         {
             base.Enter();
-            IsCompleted = false;
+            _animComplete += Die;
+            _person.Container.IsDeath = true;
         }
 
         public override void Execute()
         {
-            if (AnimationCompleted()) Die();
-            if (_isRespawned) Respawn();
+            IsCompleted = !_person.Container.IsDeath;
+            if (AnimationCompleted()) _animComplete?.Invoke();
         }
 
         public override void FixedExecute()
@@ -35,50 +37,11 @@ namespace Character.StateMachine.CharacterStates
 
         private void Die()
         {
-            if (_person.Container.IsDeath) return;
-            _person.Container.IsDeath = true;
-
-            // _person.Describe();
+            _animComplete -= Die;
             PersonContainer.Movement.SetBodyType(RigidbodyType2D.Static);
 
-            if (PersonContainer.IsPlayer)
-                Task.Delay(PersonContainer.Config.TimeToRespawn)
-                    .ContinueWith(_ => _isRespawned = true);
-        }
-
-        private void Respawn() //// to another class
-        {
-            PersonContainer.Movement.SetBodyType(RigidbodyType2D.Dynamic);
-            PersonContainer.IsDeath = false;
-            _isRespawned = false;
-
-            PersonContainer.transform.position = GetNearestPoint(PersonContainer.Config.SavePoints);
-            PersonContainer.Health.TakeFullHeal();
-            
-            IsCompleted = true;
-        }
-
-        private Vector2 GetNearestPoint(List<Vector2> points) // refactoring
-        {
-            if (points.Count <= 0) return GlobalConstants.StartPointPosition;
-
-            var length = points.Count;
-            var position = PersonContainer.transform.position;
-            var point = GlobalConstants.StartPointPosition;
-            var distance = Vector2.Distance(position, point);
-
-            for (int i = 0; i < length; i++)
-            {
-                var newPoint = points[i];
-                var newDistance = Vector2.Distance(position, newPoint);
-
-                if (newDistance > distance) continue;
-
-                point = newPoint;
-                distance = newDistance;
-            }
-
-            return point;
+            if (PersonContainer.IsPlayer) EventBus.OnPlayerDied?.Invoke(PersonContainer);
+            else EventBus.OnUnitDied?.Invoke(PersonContainer);
         }
     }
 }

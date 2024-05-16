@@ -1,5 +1,4 @@
 ﻿using System.Threading.Tasks;
-using Character.ComponentContainer;
 using Character.ValueStorages.Bars;
 
 namespace Character.ValueStorages

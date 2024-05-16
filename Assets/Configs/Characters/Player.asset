@@ -39,7 +39,7 @@ MonoBehaviour:
   MaxMana: 30
   CurrentMana: 30
   ManaUsage: 30
-  TimeToRespawn: 2000
+  TimeToRespawn: 3
   SavePoints:
   - {x: 6.2407537, y: -4.1668615}
   CanRoll: 0

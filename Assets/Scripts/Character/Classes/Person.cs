@@ -1,7 +1,6 @@
 ﻿using Character.ComponentContainer;
 using Character.StateMachine;
 using Character.StateMachine.StateSets;
-using Unity.VisualScripting;
 
 namespace Character.Classes
 {

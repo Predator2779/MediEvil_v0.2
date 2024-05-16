@@ -31,6 +31,8 @@ namespace Character.CharacterControllers.Inputs
 
         private void CheckConditions()
         {
+            if (UnityEngine.Input.GetKeyUp(KeyCode.K)) _person.Die();
+            
             if (IsFall())
             {
                 Fall();

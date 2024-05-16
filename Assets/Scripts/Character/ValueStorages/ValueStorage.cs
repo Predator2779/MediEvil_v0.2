@@ -9,14 +9,14 @@ namespace Character.ValueStorages
         
         protected ValueStorage(float currentValue, float maxValue)
         {
-            CurrentValue = currentValue;
             MaxValue = maxValue;
+            CurrentValue = currentValue;
         }
 
         protected ValueStorage(float currentValue, float maxValue, ValueBar bar)
         {
-            CurrentValue = currentValue;
             MaxValue = maxValue;
+            CurrentValue = currentValue;
             Bar = bar;
         }
 

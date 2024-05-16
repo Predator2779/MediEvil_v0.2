@@ -1,5 +1,4 @@
-﻿using Character.ComponentContainer;
-using Character.ValueStorages.Bars;
+﻿using Character.ValueStorages.Bars;
 
 namespace Character.ValueStorages
 {

@@ -26,6 +26,7 @@ namespace Character.ComponentContainer
         public PersonStateMachine StateMachine { get; set; }
         public ItemHandler ItemHandler { get; set; }
         public WeaponHandler WeaponHandler { get; set; }
+        public Vector2 StartSpawnPoint { get; set; }
 
         public Health Health { get; protected set; }
         public Stamina Stamina { get; protected set; }

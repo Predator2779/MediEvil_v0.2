@@ -1,7 +1,6 @@
 ﻿using Character.CharacterControllers.Inputs;
 using Character.ComponentContainer;
 using Cinemachine;
-using Other.Follow;
 using UI;
 using UnityEngine;
 using UnityEngine.UI;

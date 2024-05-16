@@ -48,7 +48,7 @@ namespace Character.Configs
         public float ManaUsage;
         
         [Header("Death")] 
-        [Tooltip("Milliseconds")] public int TimeToRespawn;
+        [Tooltip("Seconds")] public float TimeToRespawn;
         public List<Vector2> SavePoints = new List<Vector2>();
         
         [Header("For AI")]

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,9 +23,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="272fa73d-9c12-4abb-b38c-bc65d7e9d903" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Global/DeathManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Global/DeathManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Global/EventBus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Global/EventBus.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AudioFader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AudioFader.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Fader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Fader.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ScreenFader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ScreenFader.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/TextFader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/TextFader.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MediEvil_v0.2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MediEvil_v0.2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MediEvil_v0.2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MediEvil_v0.2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/MedEvil.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/MedEvil.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Configs/Characters/Player.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/Characters/Player.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player Camera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player Camera.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Town_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Town_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Web/LinkTransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Web/LinkTransition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/AbstractUnitCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/AbstractUnitCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/PlayerCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/PlayerCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControllers/Inputs/InputController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControllers/Inputs/InputController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Classes/Person.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Classes/Person.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Configs/CharacterConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Configs/CharacterConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/DeathState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/DeathState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Mana.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Mana.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Stamina.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Stamina.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/ValueStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/ValueStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,15 +80,24 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Stamina.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/WarriorStates/CombatSlideState.cs" />
         <option value="$PROJECT_DIR$/Assets/Transfer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/DeathState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/ValueStorage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControllers/AI/PersecutorAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/Classes/Person.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Web/TextLinkTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/PlayerCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Web/LinkTransition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/AudioFader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Global/EventBus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControllers/Inputs/InputController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/AbstractUnitCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/Configs/CharacterConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Fader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/DeathState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Global/DeathManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ScreenFader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/TextFader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/ValueStorage.cs" />
       </list>
     </option>
   </component>
@@ -132,5 +173,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="172" key="#Run/Debug_Configuration_Templates/0.0.1920.1040" timestamp="1707658445815" />
+    <state x="794" y="235" key="RiderGenerateDialog" timestamp="1715711889367">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="235" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1715711889367" />
+    <state x="565" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1715883139749">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="565" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1715883139749" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1715875709886">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1715875709886" />
   </component>
 </project>

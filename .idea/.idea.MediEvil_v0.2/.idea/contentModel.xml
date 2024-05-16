@@ -1327,6 +1327,9 @@
         <e p="Prefabs" t="Include">
           <e p="Constructs" t="Include" />
           <e p="Enemies" t="Include" />
+          <e p="Environment" t="Include">
+            <e p="Buildings" t="Include" />
+          </e>
           <e p="Objects" t="Include">
             <e p="Traps" t="Include" />
             <e p="Weapons" t="Include" />
@@ -1334,10 +1337,14 @@
           <e p="Player" t="Include">
             <e p="Camera Backs" t="Include" />
           </e>
-          <e p="UI" t="Include" />
+          <e p="UI" t="Include">
+            <e p="Menu" t="Include" />
+          </e>
         </e>
         <e p="Resources" t="Include" />
-        <e p="Scenes" t="Include" />
+        <e p="Scenes" t="Include">
+          <e p="Levels" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="Builders" t="Include">
             <e p="Creators" t="Include">
@@ -1443,6 +1450,8 @@
             <e p="MotorSwitcher.cs" t="Include" />
           </e>
           <e p="Global" t="Include">
+            <e p="DeathManager.cs" t="Include" />
+            <e p="EventBus.cs" t="Include" />
             <e p="GameModeChanger.cs" t="Include" />
             <e p="GlobalConstants.cs" t="Include" />
             <e p="Zenject" t="Include" />
@@ -1468,6 +1477,10 @@
             <e p="SavePoint.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
+            <e p="AudioFader.cs" t="Include" />
+            <e p="Fader.cs" t="Include" />
+            <e p="ScreenFader.cs" t="Include" />
+            <e p="TextFader.cs" t="Include" />
             <e p="ValueBarContainer.cs" t="Include" />
           </e>
           <e p="Web" t="Include">
@@ -1660,6 +1673,27 @@
               <e p="PSD" t="Include" />
               <e p="ReadMe.txt" t="Include" />
             </e>
+            <e p="Gothicvania-Town" t="Include">
+              <e p="Animations" t="Include" />
+              <e p="Art" t="Include">
+                <e p="Environment" t="Include">
+                  <e p="Background" t="Include" />
+                  <e p="props-sliced" t="Include" />
+                  <e p="sliced-tileset" t="Include" />
+                </e>
+                <e p="Sprites" t="Include">
+                  <e p="bearded-idle" t="Include" />
+                  <e p="bearded-walk" t="Include" />
+                  <e p="hat-man-idle" t="Include" />
+                  <e p="hat-man-walk" t="Include" />
+                  <e p="oldman-idle" t="Include" />
+                  <e p="oldman-walk" t="Include" />
+                  <e p="woman-idle" t="Include" />
+                  <e p="woman-walk" t="Include" />
+                </e>
+              </e>
+              <e p="Scenes" t="Include" />
+            </e>
             <e p="Knight" t="Include">
               <e p="120x80_PNGSheets (no outline)" t="Include" />
             </e>
@@ -1686,6 +1720,7 @@
             <e p="Palletes" t="Include" />
             <e p="Tiles" t="Include">
               <e p="Ground" t="Include" />
+              <e p="Town" t="Include" />
               <e p="TP Ground" t="Include" />
             </e>
           </e>
