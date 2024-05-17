@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using Character.Classes;
+﻿using Character.Classes;
 using Global;
 using UnityEngine;
 

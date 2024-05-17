@@ -1,5 +1,4 @@
 ﻿using Character.ComponentContainer;
-using UnityEngine;
 using UnityEngine.Events;
 
 namespace Global

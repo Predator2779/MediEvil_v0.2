@@ -9,18 +9,14 @@ namespace UI
         
         public override void SetVolume(float volume)
         {
-            _alpha = fader.color.a;
-            
-            if (IsDone(volume, _alpha))
+            if (IsDone(volume, fader.color.a))
             {
                 SendDoneMessage();
                 return;
             }
 
             StopAllCoroutines();
-            StartCoroutine(DelayedMute(volume, 1));
-            // if (volume > fader.color.a) StartCoroutine(DelayedMute(volume, 1));
-            // else if (volume < fader.color.a) StartCoroutine(DelayedMute(volume,1));
+            StartCoroutine(DelayedMute(fader.color.a, volume));
         }
         
         protected override void SetAlpha(float alpha)
