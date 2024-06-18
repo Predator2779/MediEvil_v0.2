@@ -37,11 +37,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://D:/Work/maxembo/Scripts/Character/StateMachine/States/MovementState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://D:/Work/maxembo/Scripts/Character/StateMachine/States/IState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Web/LinkTransition.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/Work/maxembo/Scripts/Character/StateMachine/IStateSwitcher.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://D:/Work/maxembo/Scripts/Character/StateMachine/CharacterStateMachine.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -82,7 +78,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -117,6 +113,9 @@
       <workItem from="1714582862416" duration="904000" />
       <workItem from="1714584918647" duration="10815000" />
       <workItem from="1715536308294" duration="781000" />
+      <workItem from="1718734355341" duration="225000" />
+      <workItem from="1718734601725" duration="91000" />
+      <workItem from="1718734720875" duration="1439000" />
     </task>
     <servers />
   </component>
@@ -141,14 +140,22 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="172" key="#Run/Debug_Configuration_Templates" timestamp="1707658445815">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="594" y="394" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1718734691748">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="552" y="172" key="#Run/Debug_Configuration_Templates/0.0.1920.1040" timestamp="1707658445815" />
+    <state x="594" y="394" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1718734691748" />
+    <state x="620" y="266" key="FileChooserDialogImpl" timestamp="1718734687749">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="620" y="266" key="FileChooserDialogImpl/0.0.1680.1050@0.0.1680.1050" timestamp="1718734687749" />
     <state x="794" y="235" key="RiderGenerateDialog" timestamp="1715711889367">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="235" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1715711889367" />
+    <state x="341" y="170" key="SettingsEditor" timestamp="1718734822619">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="341" y="170" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1718734822619" />
     <state x="565" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1715883139749">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
