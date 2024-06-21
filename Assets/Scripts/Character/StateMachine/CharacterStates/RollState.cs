@@ -28,6 +28,7 @@ namespace Character.StateMachine.CharacterStates
         public override void Exit()
         {
             base.Exit();
+            PersonContainer.Movement.StopVelocity();
             PersonContainer.Health.CanDamage = true;
         }
 

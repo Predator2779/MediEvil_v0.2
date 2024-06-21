@@ -66,6 +66,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Fader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/TextFader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ScreenFader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/Movement/CharacterMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/RollState.cs" />
       </list>
     </option>
   </component>
@@ -116,6 +118,7 @@
       <workItem from="1718734355341" duration="225000" />
       <workItem from="1718734601725" duration="91000" />
       <workItem from="1718734720875" duration="2055000" />
+      <workItem from="1719001264292" duration="152000" />
     </task>
     <servers />
   </component>

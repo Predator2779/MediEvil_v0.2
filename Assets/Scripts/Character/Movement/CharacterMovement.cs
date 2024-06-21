@@ -109,7 +109,7 @@ namespace Character.Movement
             GlobalConstants.CollisionOffset;
 
         private bool CorrectAngle(Vector2 normal) => Vector2.Angle(normal, Vector2.up) <= _requireAngle;
-        
+        public void StopVelocity() => _rbody.velocity = Vector2.zero;
         public void Walk() =>
             _rbody.velocity = GetHorizontalDirection(_config.SpeedMove * GlobalConstants.CoefPersonSpeed);
 
