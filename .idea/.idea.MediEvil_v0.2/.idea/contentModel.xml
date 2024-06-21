@@ -1315,6 +1315,9 @@
               <e p="WeaponHandler.cs" t="Include" />
             </e>
           </e>
+          <e p="Economy" t="Include">
+            <e p="SoulWallet.cs" t="Include" />
+          </e>
           <e p="Environments" t="Include">
             <e p="Hint.cs" t="Include" />
             <e p="IInteractable.cs" t="Include" />
