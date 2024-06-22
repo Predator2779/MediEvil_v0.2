@@ -8,6 +8,10 @@ namespace Economy
         protected SoulWallet(float currentValue) : base(currentValue)
         {
         }
+     
+        public SoulWallet(float currentValue, CountBar bar) : base(currentValue, bar)
+        {
+        }
         
         public SoulWallet(float currentValue, float maxValue) : base(currentValue, maxValue)
         {
@@ -15,6 +19,11 @@ namespace Economy
 
         public SoulWallet(float currentValue, float maxValue, ValueBar bar) : base(currentValue, maxValue, bar)
         {
+        }
+
+        protected override void ChangeBar()
+        {
+            if (Bar != null) Bar.SetCurrentValue(CurrentValue);
         }
     }
 }

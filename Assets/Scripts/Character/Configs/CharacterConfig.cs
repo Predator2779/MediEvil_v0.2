@@ -30,6 +30,9 @@ namespace Character.Configs
         [Tooltip("MilliSeconds")] public int ComboInterval;
         [Tooltip("Frames")] public int SecondStrikeDelay;
         
+        [Header("Souls")]
+        public int CurrentSouls;
+        
         [Header("Health")]
         public int MaxHealth;
         public int CurrentHealth;

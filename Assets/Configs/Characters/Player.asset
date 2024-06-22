@@ -28,6 +28,7 @@ MonoBehaviour:
   ComboAttackDamageModificator: 1.5
   ComboInterval: 750
   SecondStrikeDelay: 25
+  CurrentSouls: 1
   MaxHealth: 80
   CurrentHealth: 80
   MaxStamina: 50

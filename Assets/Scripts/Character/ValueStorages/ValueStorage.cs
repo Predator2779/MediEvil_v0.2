@@ -11,6 +11,13 @@ namespace Character.ValueStorages
         {
             MaxValue = 0;
             CurrentValue = currentValue;
+        }  
+        
+        protected ValueStorage(float currentValue, ViewBar bar)
+        {
+            MaxValue = 0;
+            CurrentValue = currentValue;
+            Bar = bar;
         }
         
         protected ValueStorage(float currentValue, float maxValue)
@@ -19,7 +26,7 @@ namespace Character.ValueStorages
             CurrentValue = currentValue;
         }
 
-        protected ValueStorage(float currentValue, float maxValue, ValueBar bar)
+        protected ValueStorage(float currentValue, float maxValue, ViewBar bar)
         {
             MaxValue = maxValue;
             CurrentValue = currentValue;
@@ -35,7 +42,7 @@ namespace Character.ValueStorages
 
         protected float MinValue { get; } = 0;
         protected float MaxValue { get; }
-        private ValueBar Bar { get; }
+        protected ViewBar Bar { get; }
         
         public virtual void Increase(float value) => AddValue(value);
         public virtual void Decrease(float value) => AddValue(-value);
@@ -46,7 +53,7 @@ namespace Character.ValueStorages
             ChangeBar();
         }
 
-        private void ChangeBar()
+        protected virtual void ChangeBar()
         {
             if (Bar != null) Bar.SetCurrentValue(GetPercentageRation());
         }

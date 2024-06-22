@@ -1294,8 +1294,10 @@
             </e>
             <e p="ValueStorages" t="Include">
               <e p="Bars" t="Include">
+                <e p="CountBar.cs" t="Include" />
                 <e p="GradientValueBar.cs" t="Include" />
                 <e p="ValueBar.cs" t="Include" />
+                <e p="ViewBar.cs" t="Include" />
               </e>
               <e p="Health.cs" t="Include" />
               <e p="Mana.cs" t="Include" />

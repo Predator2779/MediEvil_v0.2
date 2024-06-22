@@ -5,6 +5,7 @@ namespace UI
 {
     public class ValueBarContainer : MonoBehaviour
     {
+        [field: SerializeField] public CountBar SoulBar { get; set; }
         [field: SerializeField] public ValueBar HealthBar { get; set; }
         [field: SerializeField] public ValueBar StaminaBar { get; set; }
         [field: SerializeField] public ValueBar ManaBar { get; set; }

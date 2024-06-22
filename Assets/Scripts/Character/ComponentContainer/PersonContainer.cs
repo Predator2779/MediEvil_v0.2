@@ -6,6 +6,7 @@ using Character.StateMachine;
 using Character.ValueStorages;
 using Character.ValueStorages.Bars;
 using Damageables.Weapons;
+using Economy;
 using UnityEngine;
 
 namespace Character.ComponentContainer
@@ -17,6 +18,7 @@ namespace Character.ComponentContainer
         [field: SerializeField] public CharacterConfig Config { get; set; }
         [field: SerializeField] public Animator Animator { get; set; }
 
+        [field: SerializeField] public CountBar SoulBar { get; set; }
         [field: SerializeField] public ValueBar HealthBar { get; set; }
         [field: SerializeField] public ValueBar StaminaBar { get; set; }
         [field: SerializeField] public ValueBar ManaBar { get; set; }
@@ -28,6 +30,7 @@ namespace Character.ComponentContainer
         public WeaponHandler WeaponHandler { get; set; }
         public Vector2 StartSpawnPoint { get; set; }
 
+        public SoulWallet SoulWallet { get; protected set; }
         public Health Health { get; protected set; }
         public Stamina Stamina { get; protected set; }
         public Mana Mana { get; protected set; }
@@ -44,6 +47,7 @@ namespace Character.ComponentContainer
         
         private void SetComponents()
         {
+            SoulWallet = new SoulWallet(Config.CurrentSouls, SoulBar);
             Health = new Health(Config.CurrentHealth, Config.MaxHealth, HealthBar);
             Stamina = new Stamina(Config.CurrentStamina, Config.MaxStamina, Config.StaminaRestoreDelay, StaminaBar);
             Mana = new Mana(Config.CurrentMana, Config.MaxMana, Config.StaminaRestoreDelay, ManaBar);

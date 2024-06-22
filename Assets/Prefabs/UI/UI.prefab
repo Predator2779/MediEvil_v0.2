@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 218.8, y: -108.1}
+  m_AnchoredPosition: {x: 201, y: -145}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &3600027964379739684
@@ -792,6 +792,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vital Signs Player
       objectReference: {fileID: 0}
+    - target: {fileID: 537864926006278074, guid: ff2bb9088b4dfd348a66b4c25a295706, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 537864926006278074, guid: ff2bb9088b4dfd348a66b4c25a295706, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 537864926006278074, guid: ff2bb9088b4dfd348a66b4c25a295706, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 537864926006278074, guid: ff2bb9088b4dfd348a66b4c25a295706, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 616131363647427924, guid: ff2bb9088b4dfd348a66b4c25a295706, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -806,6 +822,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 616131363647427924, guid: ff2bb9088b4dfd348a66b4c25a295706, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540919063384722012, guid: ff2bb9088b4dfd348a66b4c25a295706, type: 3}
+      propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3500141647216796399, guid: ff2bb9088b4dfd348a66b4c25a295706, type: 3}
@@ -980,6 +1000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4abfe3b986a484782548b0979b41f83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <SoulBar>k__BackingField: {fileID: 3147262300792559485}
   <HealthBar>k__BackingField: {fileID: 1259442892673923102}
   <StaminaBar>k__BackingField: {fileID: 6721431430643259664}
   <ManaBar>k__BackingField: {fileID: 329872019413663310}
@@ -992,6 +1013,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0994f5f745fb460a99e57994e82dbc5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3147262300792559485 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2750106051727109419, guid: ff2bb9088b4dfd348a66b4c25a295706, type: 3}
+  m_PrefabInstance: {fileID: 974752796955949654}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 397000ba8651420caa23ce1caf7e72f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &5615911977791370533 stripped

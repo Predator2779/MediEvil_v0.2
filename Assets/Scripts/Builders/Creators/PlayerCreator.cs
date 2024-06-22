@@ -35,6 +35,7 @@ namespace Builders.Creators
             base.SetFields(personContainer);
 
             personContainer.IsPlayer = true;
+            personContainer.SoulBar = _barContainer.SoulBar;
             personContainer.HealthBar = _barContainer.HealthBar;
             personContainer.StaminaBar = _barContainer.StaminaBar;
             personContainer.ManaBar = _barContainer.ManaBar;
