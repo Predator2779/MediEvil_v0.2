@@ -9,5 +9,6 @@ namespace Global
         public static UnityEvent<PersonContainer> OnPlayerDied = new UnityEvent<PersonContainer>();
         public static UnityEvent OnPlayerRespawned = new UnityEvent();
         public static UnityEvent<PersonContainer> OnUnitDied = new UnityEvent<PersonContainer>();
+        public static UnityEvent OnSoulPicked = new UnityEvent();
     }
 }

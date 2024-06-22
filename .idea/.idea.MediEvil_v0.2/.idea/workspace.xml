@@ -54,7 +54,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Web/TextLinkTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Web/LinkTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/AudioFader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Global/EventBus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControllers/Inputs/InputController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/AbstractUnitCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/DeathState.cs" />
@@ -67,12 +66,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Bars/ViewBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Bars/ValueBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Bars/CountBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/SoulWallet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/ValueStorage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ValueBarContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/Configs/CharacterConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/PlayerCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Global/EventBus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/ValueStorage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/SoulItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/SoulWallet.cs" />
       </list>
     </option>
   </component>
@@ -125,6 +127,7 @@
       <workItem from="1718734720875" duration="2055000" />
       <workItem from="1719001264292" duration="1467000" />
       <workItem from="1719047249810" duration="2554000" />
+      <workItem from="1719076365744" duration="3655000" />
     </task>
     <servers />
   </component>

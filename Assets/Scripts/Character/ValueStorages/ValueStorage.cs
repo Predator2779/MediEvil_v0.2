@@ -36,22 +36,20 @@ namespace Character.ValueStorages
         public float CurrentValue
         {
             get => _currentValue;
-            set => _currentValue = Mathf.Clamp(value, MinValue, MaxValue == 0 ? value : MaxValue);
+            protected set
+            {
+                _currentValue = Mathf.Clamp(value, MinValue, MaxValue == 0 ? value : MaxValue);
+                ChangeBar();
+            }
             // при 0, max не ограничивается
         }
 
         protected float MinValue { get; } = 0;
         protected float MaxValue { get; }
         protected ViewBar Bar { get; }
-        
-        public virtual void Increase(float value) => AddValue(value);
-        public virtual void Decrease(float value) => AddValue(-value);
 
-        private void AddValue(float value)
-        {
-            CurrentValue += value;
-            ChangeBar();
-        }
+        public virtual void Increase(float value) => CurrentValue += value;
+        public virtual void Decrease(float value) => CurrentValue -= value;
 
         protected virtual void ChangeBar()
         {
