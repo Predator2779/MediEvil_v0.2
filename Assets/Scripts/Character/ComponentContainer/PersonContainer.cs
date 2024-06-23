@@ -8,6 +8,7 @@ using Character.ValueStorages.Bars;
 using Damageables.Weapons;
 using Economy;
 using UnityEngine;
+using VFX;
 
 namespace Character.ComponentContainer
 {
@@ -28,6 +29,7 @@ namespace Character.ComponentContainer
         public PersonStateMachine StateMachine { get; set; }
         public ItemHandler ItemHandler { get; set; }
         public WeaponHandler WeaponHandler { get; set; }
+        public DustEffectPlayer DustEffectPlayer { get; set; }
         public Vector2 StartSpawnPoint { get; set; }
 
         public SoulWallet SoulWallet { get; protected set; }

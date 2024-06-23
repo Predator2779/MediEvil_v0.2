@@ -15,6 +15,7 @@ namespace Character.StateMachine.CharacterStates
             base.Enter();
             PersonContainer.Movement.Roll();
             PersonContainer.Health.CanDamage = false;
+            PersonContainer.DustEffectPlayer.PlayStep();
             PersonContainer.Stamina.Decrease(PersonContainer.Config.StaminaUsage *
                                              GlobalConstants.RollStaminaUsageCoef);
         }

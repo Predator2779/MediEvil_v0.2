@@ -15,6 +15,7 @@ namespace Character.StateMachine.CharacterStates
         {
             base.FixedExecute();
             PersonContainer.Movement.Walk();
+            PersonContainer.DustEffectPlayer.PlayStep();
         }
     }
 }

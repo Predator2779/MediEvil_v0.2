@@ -37,6 +37,7 @@ namespace Character.StateMachine.CharacterStates
         {
             _animComplete -= Die;
             PersonContainer.Movement.SetBodyType(RigidbodyType2D.Static);
+            PersonContainer.DustEffectPlayer.PlayStep();
 
             if (PersonContainer.IsPlayer) EventBus.OnPlayerDied?.Invoke(PersonContainer);
             else EventBus.OnUnitDied?.Invoke(PersonContainer);

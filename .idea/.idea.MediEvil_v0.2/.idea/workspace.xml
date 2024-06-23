@@ -38,6 +38,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Web/LinkTransition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Core/Listeners/AnimatorMessageListener.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -55,19 +56,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Web/LinkTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/AudioFader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControllers/Inputs/InputController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/AbstractUnitCreator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/DeathState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Global/DeathManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Fader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/TextFader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ScreenFader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/Movement/CharacterMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/RollState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Bars/ViewBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Bars/ValueBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Bars/CountBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ValueBarContainer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/Configs/CharacterConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/PlayerCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/Item.cs" />
@@ -75,6 +72,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/ValueStorage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/SoulItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/SoulWallet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/AbstractUnitCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/WalkState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/RollState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/DeathState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/JumpState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/SlideState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/VFX/DustEffectPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/VFX/VFXPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/FallState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/IdleState.cs" />
       </list>
     </option>
   </component>
@@ -128,6 +136,7 @@
       <workItem from="1719001264292" duration="1467000" />
       <workItem from="1719047249810" duration="2554000" />
       <workItem from="1719076365744" duration="3655000" />
+      <workItem from="1719167029046" duration="1864000" />
     </task>
     <servers />
   </component>
@@ -160,23 +169,24 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="620" y="266" key="FileChooserDialogImpl/0.0.1680.1050@0.0.1680.1050" timestamp="1718734687749" />
-    <state x="695" y="237" key="RiderGenerateDialog" timestamp="1719002117696">
+    <state x="695" y="237" key="RiderGenerateDialog" timestamp="1719147844470">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="695" y="237" key="RiderGenerateDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1719002117696" />
+    <state x="695" y="237" key="RiderGenerateDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1719147844470" />
     <state x="794" y="235" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1715711889367" />
     <state x="341" y="170" key="SettingsEditor" timestamp="1718734822619">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="341" y="170" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1718734822619" />
-    <state x="565" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1715883139749">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="565" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1715883139749" />
-    <state x="545" y="227" width="672" height="685" key="search.everywhere.popup" timestamp="1719047744642">
+    <state x="494" y="127" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1719146716171">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="545" y="227" width="672" height="685" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1719047744642" />
+    <state x="494" y="127" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1719146716171" />
+    <state x="565" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1715883139749" />
+    <state x="545" y="227" width="672" height="685" key="search.everywhere.popup" timestamp="1719143391356">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="545" y="227" width="672" height="685" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1719143391356" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1715875709886" />
   </component>
 </project>

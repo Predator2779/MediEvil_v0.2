@@ -1365,6 +1365,10 @@
             <e p="TextFader.cs" t="Include" />
             <e p="ValueBarContainer.cs" t="Include" />
           </e>
+          <e p="VFX" t="Include">
+            <e p="DustEffectPlayer.cs" t="Include" />
+            <e p="VFXPlayer.cs" t="Include" />
+          </e>
           <e p="Web" t="Include">
             <e p="LinkTransition.cs" t="Include" />
             <e p="TextLinkTransition.cs" t="Include" />

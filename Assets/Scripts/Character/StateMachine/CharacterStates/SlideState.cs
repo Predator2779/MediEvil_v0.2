@@ -23,6 +23,7 @@ namespace Character.StateMachine.CharacterStates
             _prevQuaternion = _transform.rotation;
 
             PersonContainer.Movement.Slide();
+            PersonContainer.DustEffectPlayer.PlayStep();
             IsCompleted = false;
             base.Enter();
         }

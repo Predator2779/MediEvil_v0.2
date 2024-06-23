@@ -14,6 +14,7 @@ namespace Character.StateMachine.CharacterStates
         {
             base.Enter();
             PersonContainer.Movement.Jump();
+            PersonContainer.DustEffectPlayer.PlayJump();
             PersonContainer.Stamina.Decrease(PersonContainer.Config.StaminaUsage *
                                              GlobalConstants.JumpStaminaUsageCoef);
         }

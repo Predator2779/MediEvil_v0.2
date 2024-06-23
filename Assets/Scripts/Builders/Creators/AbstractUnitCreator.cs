@@ -4,6 +4,7 @@ using Character.Interaction;
 using Character.Movement;
 using Damageables.Weapons;
 using UnityEngine;
+using VFX;
 
 namespace Builders.Creators
 {
@@ -54,6 +55,7 @@ namespace Builders.Creators
             personContainer.Animator ??= _unit.GetComponent<Animator>();
             personContainer.ItemHandler ??= _unit.GetComponentInChildren<ItemHandler>();
             personContainer.WeaponHandler ??= _unit.GetComponentInChildren<WeaponHandler>();
+            personContainer.DustEffectPlayer ??= _unit.GetComponentInChildren<DustEffectPlayer>();
         }
 
         private void SetWeapon()
