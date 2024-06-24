@@ -67,7 +67,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/Configs/CharacterConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/PlayerCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/Item.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Global/EventBus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/ValueStorage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/SoulWallet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" />
@@ -84,6 +83,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/IdleState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/SoulItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Global/GlobalConstants.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Global/EventBus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cam Settings/Background Switch/BackgroundLocationSwitcher.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cam Settings/Background Switch/BackgroundLocationHandler.cs" />
       </list>
     </option>
   </component>
@@ -180,10 +182,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="341" y="170" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1718734822619" />
-    <state x="494" y="127" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1719146716171">
+    <state x="494" y="127" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1719239546735">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="494" y="127" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1719146716171" />
+    <state x="494" y="127" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1719239546735" />
     <state x="565" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1715883139749" />
     <state x="657" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1719170160064">
       <screen x="0" y="0" width="1680" height="1050" />

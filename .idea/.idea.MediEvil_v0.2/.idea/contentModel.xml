@@ -1228,6 +1228,16 @@
             </e>
             <e p="UnitBuilder.cs" t="Include" />
           </e>
+          <e p="Cam Settings" t="Include">
+            <e p="Background Switch" t="Include">
+              <e p="BackgroundLocationHandler.cs" t="Include" />
+              <e p="BackgroundLocationSwitcher.cs" t="Include" />
+            </e>
+            <e p="Follow" t="Include">
+              <e p="Following.cs" t="Include" />
+              <e p="Parallax.cs" t="Include" />
+            </e>
+          </e>
           <e p="Character" t="Include">
             <e p="CharacterControllers" t="Include">
               <e p="AI" t="Include">
@@ -1344,10 +1354,6 @@
           <e p="Other" t="Include">
             <e p="AnimationSetter.cs" t="Include" />
             <e p="DeathZone.cs" t="Include" />
-            <e p="Follow" t="Include">
-              <e p="Following.cs" t="Include" />
-              <e p="Parallax.cs" t="Include" />
-            </e>
             <e p="ObjectActiveSwitcher.cs" t="Include" />
             <e p="Scenes" t="Include">
               <e p="SceneLoader.cs" t="Include" />

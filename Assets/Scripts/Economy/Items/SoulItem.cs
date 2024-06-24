@@ -1,5 +1,4 @@
-﻿using System;
-using Character.ComponentContainer;
+﻿using Character.ComponentContainer;
 using Global;
 using UnityEngine;
 
