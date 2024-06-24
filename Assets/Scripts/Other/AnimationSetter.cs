@@ -1,13 +1,16 @@
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class AnimationSetter : MonoBehaviour
+namespace Other
 {
-    [SerializeField] private AnimationClip[] _clips;
-    
-    private void Start()
+    public class AnimationSetter : MonoBehaviour
     {
-        var clip = Random.Range(0, _clips.Length);
-        GetComponent<Animator>().CrossFade(_clips[clip].name, 0);
+        [SerializeField] private AnimationClip[] _clips;
+    
+        private void Start()
+        {
+            var clip = Random.Range(0, _clips.Length);
+            GetComponent<Animator>().CrossFade(_clips[clip].name, 0);
+        }
     }
 }

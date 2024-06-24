@@ -43,7 +43,7 @@ namespace Global
         // Saves
         public static Vector2 StartPointPosition = new Vector2(-49.75f, -0.58f);
 
-        /// Callbacks
+        // Callbacks
         public delegate void Callback();
         public delegate void WeaponCallback(Weapon weapon);
     }

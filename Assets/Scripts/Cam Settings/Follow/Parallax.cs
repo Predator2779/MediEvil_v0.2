@@ -1,6 +1,6 @@
-﻿using UnityEngine;
+﻿﻿using UnityEngine;
 
-namespace Other.Follow
+ namespace Cam_Settings.Follow
 {
     public class Parallax : MonoBehaviour
     {
