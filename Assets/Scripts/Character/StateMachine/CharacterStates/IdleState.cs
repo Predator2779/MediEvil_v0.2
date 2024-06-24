@@ -8,5 +8,11 @@ namespace Character.StateMachine.CharacterStates
         {
             Animation = "idle";
         }
+
+        public override void Enter()
+        {
+            base.Enter();
+            PersonContainer.DustEffectPlayer.PlayStep();
+        }
     }
 }

@@ -38,7 +38,7 @@ namespace VFX
         {
             var length = clips.Length;
             Queue<VFXPlayer> pull = new Queue<VFXPlayer>();
-            var parent = FindOrCreatePath();
+            var parent = FindOrCreatePath("VFXDusts_Pull");
             
             for (int i = 0; i < length; i++)
             {
@@ -49,10 +49,17 @@ namespace VFX
             return pull;
         }
 
-        private Transform FindOrCreatePath()
+        private Transform FindOrCreatePath(string name)
         {
-            var path = GameObject.Find("VFXDusts");
-            if (!path) path = Instantiate(new GameObject("VFXDusts"), Vector3.zero, Quaternion.identity);
+            var path = GameObject.Find(name);
+            
+            if (path == null)
+            {
+                path = new GameObject();
+                path.transform.position = Vector3.zero;
+                path.name = name;
+            }
+            
             return path.transform;
         }
         

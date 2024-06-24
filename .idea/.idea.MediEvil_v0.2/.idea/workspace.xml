@@ -55,7 +55,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Web/TextLinkTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Web/LinkTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/AudioFader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControllers/Inputs/InputController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Global/DeathManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Fader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/TextFader.cs" />
@@ -70,7 +69,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Global/EventBus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/ValueStorage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/SoulItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/SoulWallet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/AbstractUnitCreator.cs" />
@@ -79,10 +77,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/DeathState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/JumpState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/SlideState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/VFX/DustEffectPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/VFX/VFXPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/FallState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/VFX/DustEffectPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControllers/Inputs/InputController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/IdleState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/SoulItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Global/GlobalConstants.cs" />
       </list>
     </option>
   </component>
@@ -136,7 +137,8 @@
       <workItem from="1719001264292" duration="1467000" />
       <workItem from="1719047249810" duration="2554000" />
       <workItem from="1719076365744" duration="3655000" />
-      <workItem from="1719167029046" duration="1864000" />
+      <workItem from="1719167029046" duration="3460000" />
+      <workItem from="1719235339579" duration="2967000" />
     </task>
     <servers />
   </component>
@@ -183,10 +185,14 @@
     </state>
     <state x="494" y="127" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1719146716171" />
     <state x="565" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1715883139749" />
-    <state x="545" y="227" width="672" height="685" key="search.everywhere.popup" timestamp="1719143391356">
+    <state x="657" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1719170160064">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="545" y="227" width="672" height="685" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1719143391356" />
+    <state x="657" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1719170160064" />
+    <state x="545" y="227" width="672" height="685" key="search.everywhere.popup" timestamp="1719236380420">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="545" y="227" width="672" height="685" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1719236380420" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1715875709886" />
   </component>
 </project>

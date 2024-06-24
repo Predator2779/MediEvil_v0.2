@@ -11,11 +11,8 @@ namespace Economy.Items
 
         private Animator _animator;
         private bool _isInvoked;
-        
-        private void Start()
-        {
-            _animator = GetComponent<Animator>();
-        }
+
+        private void Awake() => SetInitParameters();
 
         private void OnTriggerEnter2D(Collider2D other)
         {
@@ -30,6 +27,13 @@ namespace Economy.Items
             container.SoulWallet.Increase(_volume);
             EventBus.OnSoulPicked?.Invoke();
             _isInvoked = true;
+        }
+
+        private void SetInitParameters()
+        {
+            _animator = GetComponent<Animator>();
+            var scale = Mathf.Clamp(_volume / 1000, 0.5f, 3.0f);
+            transform.parent.localScale = new Vector3(scale, scale, scale);
         }
 
         private void DestroyItem() => Destroy(gameObject);
