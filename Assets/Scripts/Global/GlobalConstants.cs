@@ -26,7 +26,7 @@ namespace Global
         public const float AnimDelay = 0.45f;
 
         // Ground Offsets
-        public const float CollisionOffset = 0.01f; // 0.05f
+        public const float CollisionOffset = 0.025f; // 0.05f
         public const float MaxGroundOffset = 0.05f; // 0.2f
         public const float PointOffset = 0.05f;
 

@@ -1351,6 +1351,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1267317479}
+    - target: {fileID: 3891101186753813654, guid: fb75ebe9fa84d5244a1a4c114865d6e2, type: 3}
+      propertyPath: _loadScene
+      value: Mountains_Scene
+      objectReference: {fileID: 0}
     - target: {fileID: 7081717832992894088, guid: fb75ebe9fa84d5244a1a4c114865d6e2, type: 3}
       propertyPath: m_Pivot.x
       value: 1

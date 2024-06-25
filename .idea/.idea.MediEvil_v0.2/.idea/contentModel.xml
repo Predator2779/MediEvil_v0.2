@@ -1328,6 +1328,7 @@
             </e>
           </e>
           <e p="Economy" t="Include">
+            <e p="Inventory.cs" t="Include" />
             <e p="Items" t="Include">
               <e p="Item.cs" t="Include" />
               <e p="SoulItem.cs" t="Include" />
