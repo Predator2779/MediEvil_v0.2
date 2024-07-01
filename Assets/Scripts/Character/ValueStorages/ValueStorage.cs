@@ -6,20 +6,20 @@ namespace Character.ValueStorages
     public abstract class ValueStorage
     {
         private float _currentValue;
-        
+
         protected ValueStorage(float currentValue)
         {
             MaxValue = 0;
             CurrentValue = currentValue;
-        }  
-        
+        }
+
         protected ValueStorage(float currentValue, ViewBar bar)
         {
             MaxValue = 0;
             CurrentValue = currentValue;
             Bar = bar;
         }
-        
+
         protected ValueStorage(float currentValue, float maxValue)
         {
             MaxValue = maxValue;
@@ -38,10 +38,10 @@ namespace Character.ValueStorages
             get => _currentValue;
             protected set
             {
+                // при 0, max не ограничивается
                 _currentValue = Mathf.Clamp(value, MinValue, MaxValue == 0 ? value : MaxValue);
                 ChangeBar();
             }
-            // при 0, max не ограничивается
         }
 
         protected float MinValue { get; } = 0;

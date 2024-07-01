@@ -64,12 +64,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Bars/CountBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ValueBarContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/Configs/CharacterConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/PlayerCreator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/Item.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/ValueStorage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/SoulWallet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/AbstractUnitCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/WalkState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/RollState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/JumpState.cs" />
@@ -79,14 +73,23 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/VFX/DustEffectPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControllers/Inputs/InputController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/IdleState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/SoulItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Global/EventBus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cam Settings/Background Switch/BackgroundLocationSwitcher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cam Settings/Background Switch/BackgroundLocationHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/DeathState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/Movement/CharacterMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Global/GlobalConstants.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/ValueStorage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/SoulWallet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Global/EventBus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/InventoryHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/ItemData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/ItemSet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/SoulItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/PlayerCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/AbstractUnitCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" />
       </list>
     </option>
   </component>
@@ -150,7 +153,13 @@
       <workItem from="1719076365744" duration="3655000" />
       <workItem from="1719167029046" duration="3460000" />
       <workItem from="1719235339579" duration="2967000" />
-      <workItem from="1719331249560" duration="519000" />
+      <workItem from="1719331249560" duration="1865000" />
+      <workItem from="1719393595579" duration="1071000" />
+      <workItem from="1719479429381" duration="1698000" />
+      <workItem from="1719760143925" duration="1299000" />
+      <workItem from="1719761552098" duration="353000" />
+      <workItem from="1719761925142" duration="1940000" />
+      <workItem from="1719839124823" duration="10075000" />
     </task>
     <servers />
   </component>
@@ -175,23 +184,23 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="594" y="394" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1718734691748">
+    <state x="594" y="394" width="523" height="423" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1719761903548">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="594" y="394" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1718734691748" />
-    <state x="620" y="266" key="FileChooserDialogImpl" timestamp="1718734687749">
+    <state x="594" y="394" width="523" height="423" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1719761903548" />
+    <state x="620" y="266" key="FileChooserDialogImpl" timestamp="1719762591473">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="620" y="266" key="FileChooserDialogImpl/0.0.1680.1050@0.0.1680.1050" timestamp="1718734687749" />
+    <state x="620" y="266" key="FileChooserDialogImpl/0.0.1680.1050@0.0.1680.1050" timestamp="1719762591473" />
     <state x="695" y="237" key="RiderGenerateDialog" timestamp="1719147844470">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="695" y="237" key="RiderGenerateDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1719147844470" />
     <state x="794" y="235" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1715711889367" />
-    <state x="341" y="170" key="SettingsEditor" timestamp="1718734822619">
+    <state x="393" y="217" width="1112" height="735" key="SettingsEditor" timestamp="1719763273327">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="341" y="170" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1718734822619" />
+    <state x="393" y="217" width="1112" height="735" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1719763273327" />
     <state x="494" y="127" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1719239546735">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -201,6 +210,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="657" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1719170160064" />
+    <state x="496" y="243" key="run.anything.popup" timestamp="1719479657970">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="496" y="243" key="run.anything.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1719479657970" />
     <state x="545" y="227" width="672" height="685" key="search.everywhere.popup" timestamp="1719243159225">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

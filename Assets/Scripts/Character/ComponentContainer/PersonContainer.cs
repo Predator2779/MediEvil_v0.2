@@ -7,6 +7,7 @@ using Character.ValueStorages;
 using Character.ValueStorages.Bars;
 using Damageables.Weapons;
 using Economy;
+using Global;
 using UnityEngine;
 using VFX;
 
@@ -29,6 +30,7 @@ namespace Character.ComponentContainer
         public PersonStateMachine StateMachine { get; set; }
         public ItemHandler ItemHandler { get; set; }
         public WeaponHandler WeaponHandler { get; set; }
+        public Inventory Inventory { get; set; }
         public DustEffectPlayer DustEffectPlayer { get; set; }
         public Vector2 StartSpawnPoint { get; set; }
 
@@ -39,14 +41,15 @@ namespace Character.ComponentContainer
 
         private void Update() => Controller.Execute();
         private void FixedUpdate() => Controller.FixedExecute();
-        
+
         public void Initialize()
         {
             ItemHandler.OnWeaponPickedUp += WeaponHandler.EquipWeapon;
             SetComponents();
+            SetSubscribes();
             Controller.Initialize();
         }
-        
+
         private void SetComponents()
         {
             SoulWallet = new SoulWallet(Config.CurrentSouls, SoulBar);
@@ -55,6 +58,7 @@ namespace Character.ComponentContainer
             Mana = new Mana(Config.CurrentMana, Config.MaxMana, Config.StaminaRestoreDelay, ManaBar);
         }
 
+        private void SetSubscribes() => EventBus.OnSoulPicked.AddListener(SoulWallet.Increase);
         private void OnDestroy() => ItemHandler.OnWeaponPickedUp -= WeaponHandler.EquipWeapon;
     }
 }

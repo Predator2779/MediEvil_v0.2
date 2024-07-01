@@ -3,6 +3,7 @@ using Character.Configs;
 using Character.Interaction;
 using Character.Movement;
 using Damageables.Weapons;
+using Economy;
 using UnityEngine;
 using VFX;
 
@@ -52,6 +53,7 @@ namespace Builders.Creators
         {
             personContainer.Config ??= _config;
             personContainer.Movement ??= _unit.AddComponent<CharacterMovement>();
+            personContainer.Inventory ??= _unit.AddComponent<Inventory>();
             personContainer.Animator ??= _unit.GetComponent<Animator>();
             personContainer.ItemHandler ??= _unit.GetComponentInChildren<ItemHandler>();
             personContainer.WeaponHandler ??= _unit.GetComponentInChildren<WeaponHandler>();

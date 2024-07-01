@@ -36,7 +36,7 @@ namespace Global
         public const float RollStaminaUsageCoef = 20; // в конфиг
         public const float StaminaComboDivider = 1.5f; // режет использование выносливости во время комбо-атаки
 
-        // Colldowns
+        // Cooldowns
         public const int SlideCooldown = 1000;
         public const int FallDownDelay = 1500; // задержка вставания персонажа
 
