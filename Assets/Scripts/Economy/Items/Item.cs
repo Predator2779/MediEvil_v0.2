@@ -6,14 +6,15 @@ namespace Economy.Items
     {
         [SerializeField] [Min(0)] private int _count;
 
-        [field: SerializeField] public ItemData Data { get; private set; }
+        [field: SerializeField] public ItemData ItemData { get; private set; }
 
         public int Count
         {
-            get => Data.IsOneTime ? 1 : _count;
-            set => _count = Data.IsOneTime ? 1 : value;
+            get => ItemData.IsOneTime ? 1 : _count;
+            set => _count = ItemData.IsOneTime ? 1 : value;
         }
-
+        
         public abstract void PickUp();
+        public abstract void Put();
     }
 }

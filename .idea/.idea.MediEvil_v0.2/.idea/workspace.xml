@@ -44,7 +44,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Damageables/Traps/Trap.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Damageables/Weapons/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Mana.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Stamina.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/WarriorStates/CombatSlideState.cs" />
@@ -77,18 +76,21 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Cam Settings/Background Switch/BackgroundLocationHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/DeathState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/Movement/CharacterMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Global/GlobalConstants.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/ValueStorage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/SoulWallet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Global/EventBus.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Inventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/InventoryHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/ItemData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/ItemSet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/Item.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/SoulItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/PlayerCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environments/Items/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/InventoryHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/ItemSet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/SoulItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Damageables/Weapons/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/AbstractUnitCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Global/GlobalConstants.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/Interaction/ItemHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" />
       </list>
     </option>
@@ -159,7 +161,8 @@
       <workItem from="1719760143925" duration="1299000" />
       <workItem from="1719761552098" duration="353000" />
       <workItem from="1719761925142" duration="1940000" />
-      <workItem from="1719839124823" duration="10075000" />
+      <workItem from="1719839124823" duration="10386000" />
+      <workItem from="1719913126661" duration="1053000" />
     </task>
     <servers />
   </component>

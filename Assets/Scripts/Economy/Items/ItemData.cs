@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Economy
+namespace Economy.Items
 {
     [CreateAssetMenu(menuName = "Inventory/Item", fileName = "New Item", order = 0)]
     [Serializable] public class ItemData : ScriptableObject

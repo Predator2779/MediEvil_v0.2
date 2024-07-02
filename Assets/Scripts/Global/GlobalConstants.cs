@@ -1,4 +1,5 @@
 ﻿using Damageables.Weapons;
+using Economy.Items;
 using UnityEngine;
 
 namespace Global
@@ -45,6 +46,7 @@ namespace Global
 
         // Callbacks
         public delegate void Callback();
+        public delegate void ItemCallback(Item item);
         public delegate void WeaponCallback(Weapon weapon);
     }
 }

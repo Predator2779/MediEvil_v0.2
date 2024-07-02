@@ -44,7 +44,6 @@ namespace Character.ComponentContainer
 
         public void Initialize()
         {
-            ItemHandler.OnWeaponPickedUp += WeaponHandler.EquipWeapon;
             SetComponents();
             SetSubscribes();
             Controller.Initialize();
@@ -58,7 +57,18 @@ namespace Character.ComponentContainer
             Mana = new Mana(Config.CurrentMana, Config.MaxMana, Config.StaminaRestoreDelay, ManaBar);
         }
 
-        private void SetSubscribes() => EventBus.OnSoulPicked.AddListener(SoulWallet.Increase);
-        private void OnDestroy() => ItemHandler.OnWeaponPickedUp -= WeaponHandler.EquipWeapon;
+        private void SetSubscribes() 
+        {
+            EventBus.OnSoulPicked.AddListener(SoulWallet.Increase);
+            ItemHandler.OnWeaponPickedUp += WeaponHandler.EquipWeapon;
+            ItemHandler.OnItemPickedUp += Inventory.AddItems;
+        }
+
+        private void OnDestroy()
+        {
+            EventBus.OnSoulPicked.RemoveListener(SoulWallet.Increase);
+            ItemHandler.OnWeaponPickedUp -= WeaponHandler.EquipWeapon;
+            ItemHandler.OnItemPickedUp -= Inventory.AddItems;
+        }
     }
 }

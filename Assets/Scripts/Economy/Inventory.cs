@@ -11,10 +11,10 @@ namespace Economy
         [SerializeField] private List<ItemSet> _listItems = new List<ItemSet>();
         [SerializeField] private int _size;
 
-        public void AddItems(Item item, int count)
+        public void AddItems(Item item)
         {
-            if (HasItems(item.Data.name, 1)) AddItem(item.Data.name, count);
-            else if (HasFreeSpace()) CreateAndAdd(item, count);
+            if (HasItems(item.ItemData.name, 1)) AddItem(item.ItemData.name, item.Count);
+            else if (HasFreeSpace()) CreateAndAdd(item, item.Count);
         }
 
         public bool TryGetItems(string name, int count, out ItemSet set)
@@ -48,10 +48,10 @@ namespace Economy
             if (set.Count <= 0) _listItems.Remove(set);
         }
 
-        private ItemSet GetItemSet(string name) => _listItems.FirstOrDefault(set => set.Item.Data.Name == name);
+        private ItemSet GetItemSet(string name) => _listItems.FirstOrDefault(set => set.Item.ItemData.Name == name);
 
         private ItemSet GetItemSet(string name, int count) =>
-            _listItems.FirstOrDefault(set => set.Item.Data.Name == name && set.Count == count);
+            _listItems.FirstOrDefault(set => set.Item.ItemData.Name == name && set.Count == count);
 
         private bool HasItems(string name, int count) => GetItemSet(name, count) != null;
         private bool HasFreeSpace() => _listItems.Count < _size;

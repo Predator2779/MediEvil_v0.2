@@ -161,7 +161,7 @@ namespace Character.CharacterControllers.Inputs
                 .ContinueWith(_ => { _canCombo = false; });
         }
 
-        private void Interact() => _person.Container.ItemHandler.HandleItem();
+        private void Interact() => _person.Container.ItemHandler.Handle();
         private void Fall() => _person.Fall();
         private void Jump() => _person.Jump();
         private void Roll() => _person.Roll();

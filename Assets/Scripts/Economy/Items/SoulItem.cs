@@ -19,6 +19,11 @@ namespace Economy.Items
             _isInvoked = true;
         }
 
+        public override void Put()
+        {
+            throw new System.NotImplementedException();
+        }
+
         private void SetInitParameters()
         {
             _animator = GetComponent<Animator>();

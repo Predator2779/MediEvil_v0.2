@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Damageables.Weapons;
-using Environments.Items;
+using Economy;
+using Economy.Items;
 using Global;
 using UnityEngine;
 
@@ -10,6 +11,7 @@ namespace Character.Interaction
     public class ItemHandler : MonoBehaviour
     {
         public GlobalConstants.WeaponCallback OnWeaponPickedUp;
+        public GlobalConstants.ItemCallback OnItemPickedUp;
         
         [SerializeField] private List<Item> _selectedItems = new List<Item>();
         private CircleCollider2D _collider;
@@ -27,13 +29,18 @@ namespace Character.Interaction
             if (other.TryGetComponent(out Item item) && _selectedItems.Contains(item))
                 _selectedItems.Remove(item);
         }
-        
-        public void HandleItem()
+
+        public float GetDetectionRadius() => _collider.radius;
+
+        public void Handle()
         {
             if (_selectedItems.Count <= 0) return;
             
             var item = GetItem();
-            if (item != null && item.TryGetComponent(out Weapon weapon)) HandleWeapon(weapon);
+            if (item == null) return;
+            
+            if (item.TryGetComponent(out Weapon weapon)) HandleWeapon(weapon);
+            else HandleItem(item);
         }
 
         private void HandleWeapon(Weapon weapon)
@@ -41,8 +48,13 @@ namespace Character.Interaction
             _selectedItems.Remove(weapon);
             OnWeaponPickedUp?.Invoke(weapon);
         }
-        
-        public float GetDetectionRadius() => _collider.radius;
+
+        private void HandleItem(Item item)
+        {
+            OnItemPickedUp?.Invoke(item);
+            item.PickUp();
+        }
+
         private Item GetItem() => _selectedItems[0];
     }
 }
