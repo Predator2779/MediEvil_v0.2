@@ -4,7 +4,7 @@ using Character.ComponentContainer;
 using UI;
 using UnityEngine;
 
-namespace Builders.Creators
+namespace Creators
 {
     public class UnitCreator : AbstractUnitCreator
     {

@@ -6,7 +6,7 @@ using UI;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Builders.Creators
+namespace Creators
 {
     public class PlayerCreator : AbstractUnitCreator
     {

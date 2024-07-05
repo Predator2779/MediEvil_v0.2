@@ -3,11 +3,10 @@ using Character.Configs;
 using Character.Interaction;
 using Character.Movement;
 using Damageables.Weapons;
-using Economy;
 using UnityEngine;
 using VFX;
 
-namespace Builders.Creators
+namespace Creators
 {
     public abstract class AbstractUnitCreator : AbstractCreator
     {

@@ -1220,15 +1220,6 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="Builders" t="Include">
-            <e p="Creators" t="Include">
-              <e p="AbstractCreator.cs" t="Include" />
-              <e p="AbstractUnitCreator.cs" t="Include" />
-              <e p="ItemCreator.cs" t="Include" />
-              <e p="PlayerCreator.cs" t="Include" />
-              <e p="UnitCreator.cs" t="Include" />
-            </e>
-          </e>
           <e p="Cam Settings" t="Include">
             <e p="Background Switch" t="Include">
               <e p="BackgroundLocationHandler.cs" t="Include" />
@@ -1315,6 +1306,13 @@
               <e p="Stamina.cs" t="Include" />
               <e p="ValueStorage.cs" t="Include" />
             </e>
+          </e>
+          <e p="Creators" t="Include">
+            <e p="AbstractCreator.cs" t="Include" />
+            <e p="AbstractUnitCreator.cs" t="Include" />
+            <e p="ItemCreator.cs" t="Include" />
+            <e p="PlayerCreator.cs" t="Include" />
+            <e p="UnitCreator.cs" t="Include" />
           </e>
           <e p="Damageables" t="Include">
             <e p="Traps" t="Include">

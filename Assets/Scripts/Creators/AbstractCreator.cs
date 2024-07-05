@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Builders.Creators
+namespace Creators
 {
     public abstract class AbstractCreator : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 ﻿using Economy.Items;
 using UnityEngine;
 
-namespace Builders.Creators
+namespace Creators
 {
     public class ItemCreator : AbstractCreator
     {
@@ -14,10 +14,17 @@ namespace Builders.Creators
         
         protected override void Initialize()
         {
-            _item = GetComponent<Item>();
+            _item = GetItemComponent();
             if (_item == null) return;
             SetData();
             SetCount();
+        }
+
+        private Item GetItemComponent()
+        {
+            var item = _unit.GetComponent<Item>();
+            if (item == null) item = _unit.GetComponentInChildren<Item>();
+            return item;
         }
         
         private void SetData()
@@ -27,7 +34,7 @@ namespace Builders.Creators
         
         private void SetCount()
         {
-            if (_itemCount != 0) _item.Count = _itemCount;
+            if (_itemCount > 0) _item.Count = _itemCount;
         }
     }
 }
