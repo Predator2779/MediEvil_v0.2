@@ -19,6 +19,7 @@ namespace Builders.Creators
             
             CreateUnit();
             CreateContainer();
+            SetFields(_container);
         }
 
         protected override void SetController()

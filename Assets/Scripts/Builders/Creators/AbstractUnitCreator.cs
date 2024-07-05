@@ -9,51 +9,32 @@ using VFX;
 
 namespace Builders.Creators
 {
-    public abstract class AbstractUnitCreator : MonoBehaviour
+    public abstract class AbstractUnitCreator : AbstractCreator
     {
-        [SerializeField] protected GameObject _unitPrefabBase;
         [SerializeField] protected GameObject _weaponPrefab;
-        [SerializeField] protected Transform _path;
         [SerializeField] protected CharacterConfig _config;
 
-        protected GameObject _unit;
         protected PersonContainer _container;
 
-        private void Awake() => StartCreator();
-
-        private void StartCreator()
+        protected override void StartCreator()
         {
             InstantiateUnitComponents();
             SetSpawnPoint();
             SetController();
             SetWeapon();
             Initialize();
-
-            gameObject.SetActive(false);
+            DisableCreator();
         }
 
-        protected abstract void InstantiateUnitComponents();
         protected abstract void SetController();
-        protected void SetSpawnPoint() => _container.StartSpawnPoint = transform.position;
-        private void Initialize() => _container.Initialize();
-
-        protected void CreateUnit() => _unit = Instantiate(
-            _unitPrefabBase,
-            transform.position,
-            Quaternion.identity,
-            _path);
-
-        protected void CreateContainer()
-        {
-            _container = _unit.AddComponent<PersonContainer>();
-            SetFields(_container);
-        }
+        private void SetSpawnPoint() => _container.StartSpawnPoint = transform.position;
+        protected override void Initialize() => _container.Initialize();
+        protected void CreateContainer() => _container = _unit.AddComponent<PersonContainer>();
 
         protected virtual void SetFields(PersonContainer personContainer)
         {
             personContainer.Config ??= _config;
             personContainer.Movement ??= _unit.AddComponent<CharacterMovement>();
-            personContainer.Inventory ??= _unit.AddComponent<Inventory>();
             personContainer.Animator ??= _unit.GetComponent<Animator>();
             personContainer.ItemHandler ??= _unit.GetComponentInChildren<ItemHandler>();
             personContainer.WeaponHandler ??= _unit.GetComponentInChildren<WeaponHandler>();

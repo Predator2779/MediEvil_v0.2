@@ -6,14 +6,14 @@ using UnityEngine;
 
 namespace Economy
 {
-    public class Inventory : MonoBehaviour
+    [Serializable] public class Inventory : MonoBehaviour
     {
         [SerializeField] private List<ItemSet> _listItems = new List<ItemSet>();
-        [SerializeField] private int _size;
+        [SerializeField] [Min(10)] private int _size = 10;
 
         public void AddItems(Item item)
         {
-            if (HasItems(item.ItemData.name, 1)) AddItem(item.ItemData.name, item.Count);
+            if (HasItems(item.ItemData.Name, 1)) AddItem(item.ItemData.Name, item.Count);
             else if (HasFreeSpace()) CreateAndAdd(item, item.Count);
         }
 
@@ -51,7 +51,7 @@ namespace Economy
         private ItemSet GetItemSet(string name) => _listItems.FirstOrDefault(set => set.Item.ItemData.Name == name);
 
         private ItemSet GetItemSet(string name, int count) =>
-            _listItems.FirstOrDefault(set => set.Item.ItemData.Name == name && set.Count == count);
+            _listItems.FirstOrDefault(set => set.Item.ItemData.Name == name && set.Count >= count);
 
         private bool HasItems(string name, int count) => GetItemSet(name, count) != null;
         private bool HasFreeSpace() => _listItems.Count < _size;

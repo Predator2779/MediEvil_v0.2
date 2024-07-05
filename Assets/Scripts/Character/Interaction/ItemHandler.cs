@@ -39,13 +39,14 @@ namespace Character.Interaction
             var item = GetItem();
             if (item == null) return;
             
+            _selectedItems.Remove(item);
+            
             if (item.TryGetComponent(out Weapon weapon)) HandleWeapon(weapon);
             else HandleItem(item);
         }
 
         private void HandleWeapon(Weapon weapon)
         {
-            _selectedItems.Remove(weapon);
             OnWeaponPickedUp?.Invoke(weapon);
         }
 

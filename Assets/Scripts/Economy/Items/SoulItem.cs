@@ -16,6 +16,7 @@ namespace Economy.Items
 
             _animator.SetBool("IsPicked", true);
             EventBus.OnSoulPicked?.Invoke(Count);
+            
             _isInvoked = true;
         }
 
@@ -31,6 +32,6 @@ namespace Economy.Items
             transform.parent.localScale = new Vector3(scale, scale, scale);
         }
 
-        private void DestroyItem() => Destroy(gameObject);
+        private void DisableItem() => gameObject.SetActive(false);
     }
 }

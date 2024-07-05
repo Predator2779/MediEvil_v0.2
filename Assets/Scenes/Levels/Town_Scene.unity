@@ -48975,6 +48975,55 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &517866165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 517866167}
+  - component: {fileID: 517866166}
+  m_Layer: 0
+  m_Name: SoulCreator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &517866166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517866165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10572ffb5a5340c88be697febe156695, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _unitPrefabBase: {fileID: 2295926159285460318, guid: 8e75c1a42f2a1214e851d8298e2c82f7, type: 3}
+  _countObjects: 1
+  _path: SMALL_SOULS
+  _data: {fileID: 11400000, guid: cd12b79bb16ccb044b606ed3b29c605e, type: 2}
+  _itemCount: 30
+--- !u!4 &517866167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517866165}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.98, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1026459734
 GameObject:
   m_ObjectHideFlags: 0
@@ -90354,13 +90403,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _unitPrefabBase: {fileID: 7463753855456589253, guid: 8675d0700147e27479d32100d96b52b5, type: 3}
+  _countObjects: 1
+  _path: PLAYER
   _weaponPrefab: {fileID: 0}
-  _path: {fileID: 105730983}
   _config: {fileID: 11400000, guid: 0273e2e790b6d2146a283184f3e968a4, type: 2}
   _cameraPrefab: {fileID: 5142132789260061683, guid: bfdce5e009171eb4387d624b4c556444, type: 3}
-  _cinemachine: {fileID: 1342269743}
   _barContainer: {fileID: 2767769789985514888}
   _weaponUi: {fileID: 2137524993}
+  _cinemachine: {fileID: 1342269743}
 --- !u!4 &1341212449
 Transform:
   m_ObjectHideFlags: 0
@@ -178119,6 +178169,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soul
       objectReference: {fileID: 0}
+    - target: {fileID: 2295926159285460318, guid: 8e75c1a42f2a1214e851d8298e2c82f7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -178776,3 +178830,4 @@ SceneRoots:
   - {fileID: 2073375410}
   - {fileID: 306135042}
   - {fileID: 98626845982962949}
+  - {fileID: 517866167}

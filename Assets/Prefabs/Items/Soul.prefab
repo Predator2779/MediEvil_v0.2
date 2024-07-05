@@ -45,7 +45,8 @@ GameObject:
   - component: {fileID: 7808615802244463268}
   - component: {fileID: 8487063645591594356}
   - component: {fileID: 6337788614090593322}
-  m_Layer: 0
+  - component: {fileID: 6119915440807565129}
+  m_Layer: 13
   m_Name: Soul Core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +170,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.05}
@@ -188,4 +189,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 30
-  <Data>k__BackingField: {fileID: 11400000, guid: cd12b79bb16ccb044b606ed3b29c605e, type: 2}
+  <ItemData>k__BackingField: {fileID: 11400000, guid: cd12b79bb16ccb044b606ed3b29c605e, type: 2}
+--- !u!50 &6119915440807565129
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8950917579887093929}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

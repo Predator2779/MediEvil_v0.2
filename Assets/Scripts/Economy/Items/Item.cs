@@ -5,8 +5,8 @@ namespace Economy.Items
     public abstract class Item : MonoBehaviour
     {
         [SerializeField] [Min(0)] private int _count;
-
-        [field: SerializeField] public ItemData ItemData { get; private set; }
+        
+        [field: SerializeField] public ItemData ItemData { get; set; }
 
         public int Count
         {
