@@ -1,16 +1,12 @@
-﻿using UnityEngine;
+﻿using Economy.Items;
+using UnityEngine;
 
 namespace Damageables.Weapons
 {
     [CreateAssetMenu(menuName = "Configs/Weapons", fileName = "New WeaponConfig", order = 0)]
-    public class WeaponData : ScriptableObject
+    public class WeaponData : ItemData
     {
-        [Header("About")] [Space]
-        public Sprite Icon;
-        public string Name;
-
-        [Space] [Header("Parameters")]
-        public float Damage;
-        public float AttackRadius;
+        [field: SerializeField] public float Damage { get; private set; }
+        [field: SerializeField] public float AttackRadius { get; private set; }
     }
 }

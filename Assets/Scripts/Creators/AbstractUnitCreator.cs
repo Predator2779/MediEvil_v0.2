@@ -3,6 +3,7 @@ using Character.Configs;
 using Character.Interaction;
 using Character.Movement;
 using Damageables.Weapons;
+using Economy;
 using UnityEngine;
 using VFX;
 
@@ -17,6 +18,7 @@ namespace Creators
 
         protected override void StartCreator()
         {
+            EnableCreator();
             InstantiateUnitComponents();
             SetSpawnPoint();
             SetController();
@@ -24,11 +26,11 @@ namespace Creators
             Initialize();
             DisableCreator();
         }
-
+        
         protected abstract void SetController();
+        protected void CreateContainer() => _container = _unit.AddComponent<PersonContainer>();
         private void SetSpawnPoint() => _container.StartSpawnPoint = transform.position;
         protected override void Initialize() => _container.Initialize();
-        protected void CreateContainer() => _container = _unit.AddComponent<PersonContainer>();
 
         protected virtual void SetFields(PersonContainer personContainer)
         {

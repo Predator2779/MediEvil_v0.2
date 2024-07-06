@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3626e7861fc54ef798814f3c585fa7ae, type: 3}
   m_Name: Gold Latana
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: 019b025294b03e24daf55b3f58c32a9a, type: 3}
-  Name: "\u0417\u043E\u043B\u043E\u0442\u0430\u044F \u041B\u0430\u0442\u0430\u043D\u0430"
-  Damage: 11
-  AttackRadius: 0.22
+  <Icon>k__BackingField: {fileID: 21300000, guid: 019b025294b03e24daf55b3f58c32a9a, type: 3}
+  <Name>k__BackingField: "\u0417\u043E\u043B\u043E\u0442\u0430\u044F \u041B\u0430\u0442\u0430\u043D\u0430"
+  <Description>k__BackingField: "\u0417\u043E\u043B\u043E\u0442\u0430\u044F \u041B\u0430\u0442\u0430\u043D\u0430"
+  <Price>k__BackingField: 100
+  <Damage>k__BackingField: 5
+  <AttackRadius>k__BackingField: 5

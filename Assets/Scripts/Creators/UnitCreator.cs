@@ -1,4 +1,5 @@
 ﻿using System;
+using Cam_Settings.Follow;
 using Character.CharacterControllers.AI;
 using Character.ComponentContainer;
 using UI;
@@ -16,7 +17,7 @@ namespace Creators
         protected override void InstantiateUnitComponents()
         {
             _scopeCoverage = GetComponent<ScopeCoverage>();
-            
+
             CreateUnit();
             CreateContainer();
             SetFields(_container);
@@ -49,9 +50,10 @@ namespace Creators
                     _prefabBarContainer,
                     _unit.transform.position,
                     Quaternion.identity,
-                    _unit.transform);
+                    FindOrCreatePath("EnemyBarContainers"));
             }
 
+            barContainer.gameObject.GetComponent<Following>().Target = _unit.transform;
             personContainer.HealthBar = barContainer.HealthBar;
             personContainer.StaminaBar = barContainer.StaminaBar;
             personContainer.ManaBar = barContainer.ManaBar;

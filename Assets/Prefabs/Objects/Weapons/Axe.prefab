@@ -326,6 +326,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2914af7cb6546d4ace9f170c0617c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Data>k__BackingField: {fileID: 11400000, guid: 05e21f4fe779be04c8b7bc2c96f91074, type: 2}
+  _count: 1
+  <ItemData>k__BackingField: {fileID: 11400000, guid: 05e21f4fe779be04c8b7bc2c96f91074, type: 2}
+  <WeaponData>k__BackingField: {fileID: 11400000, guid: 05e21f4fe779be04c8b7bc2c96f91074, type: 2}
   _particles: {fileID: 0}
   _trail: {fileID: 3551809944034092629}

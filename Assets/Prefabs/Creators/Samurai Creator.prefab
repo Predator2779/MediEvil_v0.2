@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8838208266340291277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2913124508964048616}
+  - component: {fileID: 3590561537134470268}
+  - component: {fileID: 450400229049701553}
+  m_Layer: 0
+  m_Name: Samurai Creator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2913124508964048616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8838208266340291277}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 55.67, y: -3.58, z: -0.019765738}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3590561537134470268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8838208266340291277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d3c114127294f698a05337e14e1f981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _unitPrefabBase: {fileID: 8153284057026468642, guid: 7c242cde54c59494cbe6a0ddddfdf9bd, type: 3}
+  _countObjects: 1
+  _path: ENEMIES
+  _weaponPrefab: {fileID: 3576017812378288901, guid: f0a594b90a1c2e4408d828d65d13240d, type: 3}
+  _config: {fileID: 11400000, guid: 8c8cc9b33ebbe9347b1c7d9f4eb634a1, type: 2}
+  _controller: 1
+  _prefabBarContainer: {fileID: 7287470389366699668, guid: ffe26f70e488a844bb65667308abe3fa, type: 3}
+--- !u!114 &450400229049701553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8838208266340291277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77368d40ff514199ba36d042adc1f9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ViewingRadius: 3
+  RunDistance: 2.5
+  WalkDistance: 1.5
+  StayDistance: 0.5
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 8

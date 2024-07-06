@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5500673800222745098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5798539906597590645}
+  - component: {fileID: 5370791546654104157}
+  - component: {fileID: 2916927992371980105}
+  m_Layer: 0
+  m_Name: Persecutor Creator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5798539906597590645
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5500673800222745098}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 19.11, y: -1.2, z: -0.019765738}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5370791546654104157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5500673800222745098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d3c114127294f698a05337e14e1f981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _unitPrefabBase: {fileID: 7181383657651461879, guid: fb5b6cb50e9e5b9418f16033e8a1ddd4, type: 3}
+  _countObjects: 1
+  _path: ENEMIES
+  _weaponPrefab: {fileID: 3576017812378288901, guid: a112b2eabc54a524f99c07a1b0fc3cfe, type: 3}
+  _config: {fileID: 11400000, guid: bd7f7ef5f7ebf4e4fa40a582ac973380, type: 2}
+  _controller: 1
+  _prefabBarContainer: {fileID: 7287470389366699668, guid: ffe26f70e488a844bb65667308abe3fa, type: 3}
+--- !u!114 &2916927992371980105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5500673800222745098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77368d40ff514199ba36d042adc1f9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ViewingRadius: 3
+  RunDistance: 2.5
+  WalkDistance: 1.5
+  StayDistance: 0.5
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 8

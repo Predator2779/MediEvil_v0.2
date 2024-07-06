@@ -237,6 +237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2831379600179386978}
   - component: {fileID: 7287470389366699668}
+  - component: {fileID: 7365752793376957522}
   m_Layer: 9
   m_Name: Vital Signs NPC
   m_TagString: Untagged
@@ -276,9 +277,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4abfe3b986a484782548b0979b41f83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <SoulBar>k__BackingField: {fileID: 0}
   <HealthBar>k__BackingField: {fileID: 7435945284387367448}
   <StaminaBar>k__BackingField: {fileID: 2559970765835709449}
   <ManaBar>k__BackingField: {fileID: 0}
+--- !u!114 &7365752793376957522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3421006068181690747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce66e4c648be0dc4da26f340be2457cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Target>k__BackingField: {fileID: 0}
+  _speed: 1000
+  _xFollowing: 1
+  _yFollowing: 1
 --- !u!1 &4155178484129705193
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,6 +413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4abfe3b986a484782548b0979b41f83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <SoulBar>k__BackingField: {fileID: 0}
   <HealthBar>k__BackingField: {fileID: 7435945284387367448}
   <StaminaBar>k__BackingField: {fileID: 2559970765835709449}
   <ManaBar>k__BackingField: {fileID: 0}

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6758691582417950000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7411747920507320445}
+  - component: {fileID: 7984518518890309110}
+  - component: {fileID: 4365136472165880897}
+  m_Layer: 0
+  m_Name: Assassin Creator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7411747920507320445
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758691582417950000}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.43, y: -0.67, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7984518518890309110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758691582417950000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d3c114127294f698a05337e14e1f981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _unitPrefabBase: {fileID: 4144436462464122044, guid: a5e55db0953922440a81acaf4d686714, type: 3}
+  _countObjects: 1
+  _path: ENEMIES
+  _weaponPrefab: {fileID: 3576017812378288901, guid: f0a594b90a1c2e4408d828d65d13240d, type: 3}
+  _config: {fileID: 11400000, guid: 4a39ff57fb9cd8b45ab9c81d453705bf, type: 2}
+  _controller: 1
+  _prefabBarContainer: {fileID: 7287470389366699668, guid: ffe26f70e488a844bb65667308abe3fa, type: 3}
+--- !u!114 &4365136472165880897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758691582417950000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77368d40ff514199ba36d042adc1f9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ViewingRadius: 3
+  RunDistance: 2.5
+  WalkDistance: 1.5
+  StayDistance: 0.5
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 8

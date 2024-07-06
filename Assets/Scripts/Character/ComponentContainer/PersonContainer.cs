@@ -60,15 +60,15 @@ namespace Character.ComponentContainer
         private void SetSubscribes() 
         {
             EventBus.OnSoulPicked.AddListener(SoulWallet.Increase);
-            ItemHandler.OnWeaponPickedUp += WeaponHandler.EquipWeapon;
-            ItemHandler.OnItemPickedUp += Inventory.AddItems;
+            if (WeaponHandler != null) ItemHandler.OnWeaponPickedUp += WeaponHandler.EquipWeapon;
+            if (Inventory != null) ItemHandler.OnItemPickedUp += Inventory.AddItems;
         }
 
         private void OnDestroy()
         {
             EventBus.OnSoulPicked.RemoveListener(SoulWallet.Increase);
-            ItemHandler.OnWeaponPickedUp -= WeaponHandler.EquipWeapon;
-            ItemHandler.OnItemPickedUp -= Inventory.AddItems;
+            if (WeaponHandler != null) ItemHandler.OnWeaponPickedUp -= WeaponHandler.EquipWeapon;
+            if (Inventory != null) ItemHandler.OnItemPickedUp -= Inventory.AddItems;
         }
     }
 }
