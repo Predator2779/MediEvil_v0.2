@@ -7,11 +7,13 @@ namespace Economy.Items.Souls
     {
         private PersonContainer _personContainer;
         private Item _droppedSoulsUnit;
-
+        private string _soulName;
+        
         public SoulsHandler(PersonContainer personContainer, SoulItem dropSoulsUnitUnit)
         {
             _personContainer = personContainer;
             _droppedSoulsUnit = dropSoulsUnitUnit;
+            _soulName = dropSoulsUnitUnit.ItemData.Name;
         }
 
         public void Subscribe()
@@ -32,6 +34,7 @@ namespace Economy.Items.Souls
 
         private void PickUpDroppedSouls(Item item)
         {
+            item.ItemData.Name = _soulName;
             _personContainer.Inventory.AddItems(item);
             _personContainer.SoulWallet.Increase(item.Count);
             _droppedSoulsUnit.gameObject.SetActive(false);
@@ -41,7 +44,7 @@ namespace Economy.Items.Souls
         {
             _droppedSoulsUnit.transform.position = _personContainer.transform.position;
             _droppedSoulsUnit.gameObject.SetActive(true);
-            _droppedSoulsUnit.Count = _personContainer.Inventory.TryGetItems("My Soul", out ItemSet set) ? set.Count : 0;
+            _droppedSoulsUnit.Count = _personContainer.Inventory.TryGetItems(_soulName, out ItemSet set) ? set.Count : 0;
             _personContainer.SoulWallet.Decrease(_droppedSoulsUnit.Count);
         }
     }

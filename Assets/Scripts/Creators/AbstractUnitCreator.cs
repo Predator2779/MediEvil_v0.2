@@ -4,6 +4,7 @@ using Character.Interaction;
 using Character.Movement;
 using Damageables.Weapons;
 using Economy;
+using Unity.VisualScripting;
 using UnityEngine;
 using VFX;
 
@@ -13,7 +14,7 @@ namespace Creators
     {
         [SerializeField] protected GameObject _weaponPrefab;
         [SerializeField] protected CharacterConfig _config;
-
+        
         protected PersonContainer _container;
 
         protected override void StartCreator()
@@ -40,6 +41,7 @@ namespace Creators
             personContainer.ItemHandler ??= _unit.GetComponentInChildren<ItemHandler>();
             personContainer.WeaponHandler ??= _unit.GetComponentInChildren<WeaponHandler>();
             personContainer.DustEffectPlayer ??= _unit.GetComponentInChildren<DustEffectPlayer>();
+            personContainer.Inventory ??= _unit.AddComponent<Inventory>();
         }
 
         private void SetWeapon()

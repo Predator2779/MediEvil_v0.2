@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Boss Soul
   m_EditorClassIdentifier: 
   <Icon>k__BackingField: {fileID: 0}
-  <Name>k__BackingField: "\u0414\u0443\u0448\u0430 \u0420\u043E\u0433\u0430\u0442\u043E\u0433\u043E
+  <Name>k__BackingField: Horned Demon Soul
+  <Description>k__BackingField: "\u0414\u0443\u0448\u0430 \u0420\u043E\u0433\u0430\u0442\u043E\u0433\u043E
     \u0414\u0435\u043C\u043E\u043D\u0430"
-  <Description>k__BackingField: 
   <Price>k__BackingField: 1000
-  <IsOneTime>k__BackingField: 0

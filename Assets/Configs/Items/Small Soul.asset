@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Small Soul
   m_EditorClassIdentifier: 
   <Icon>k__BackingField: {fileID: 0}
-  <Name>k__BackingField: "\u041C\u0430\u043B\u0435\u043D\u044C\u043A\u0430\u044F
+  <Name>k__BackingField: Small Soul
+  <Description>k__BackingField: "\u041C\u0430\u043B\u0435\u043D\u044C\u043A\u0430\u044F
     \u0434\u0443\u0448\u0430"
-  <Description>k__BackingField: 
   <Price>k__BackingField: 50
-  <IsOneTime>k__BackingField: 0

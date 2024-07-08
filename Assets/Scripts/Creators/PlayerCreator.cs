@@ -45,8 +45,6 @@ namespace Creators
 
         private void SetPlayerFields(PersonContainer personContainer)
         {
-            personContainer.Inventory ??= _unit.AddComponent<Inventory>();
-
             personContainer.IsPlayer = true;
             personContainer.SoulBar = _barContainer.SoulBar;
             personContainer.HealthBar = _barContainer.HealthBar;
