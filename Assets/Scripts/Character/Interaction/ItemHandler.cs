@@ -12,6 +12,7 @@ namespace Character.Interaction
     {
         public GlobalConstants.WeaponCallback OnWeaponPickedUp;
         public GlobalConstants.ItemCallback OnItemPickedUp;
+        public GlobalConstants.ItemCallback OnSoulPickedUp;
         
         [SerializeField] private List<Item> _selectedItems = new List<Item>();
         private CircleCollider2D _collider;
@@ -42,6 +43,7 @@ namespace Character.Interaction
             _selectedItems.Remove(item);
             
             if (item.TryGetComponent(out Weapon weapon)) HandleWeapon(weapon);
+            else if (item.TryGetComponent(out SoulItem soul)) HandleSoul(soul);
             else HandleItem(item);
         }
 
@@ -50,6 +52,12 @@ namespace Character.Interaction
             OnWeaponPickedUp?.Invoke(weapon);
         }
 
+        private void HandleSoul(SoulItem soul)
+        {
+            OnSoulPickedUp?.Invoke(soul);
+            soul.PickUp();
+        } 
+        
         private void HandleItem(Item item)
         {
             OnItemPickedUp?.Invoke(item);

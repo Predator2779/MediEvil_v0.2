@@ -27,9 +27,8 @@ namespace Creators
         protected abstract void InstantiateUnitComponents();
         protected abstract void Initialize();
 
-        protected void CreateUnit() => _unit = Instantiate(
-            _unitPrefabBase,
-            transform.position,
+        protected void CreateUnit(GameObject unit) => _unit = Instantiate(
+            unit, transform.position,
             Quaternion.identity,
             FindOrCreatePath(_path));
 

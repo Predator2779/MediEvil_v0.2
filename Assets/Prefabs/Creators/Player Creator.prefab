@@ -55,6 +55,7 @@ MonoBehaviour:
   _barContainer: {fileID: 0}
   _weaponUi: {fileID: 0}
   _cinemachine: {fileID: 0}
+  _dropSoulsPrefab: {fileID: 4444134981984244165, guid: af46d16222fcea14894c08894f6b3720, type: 3}
 --- !u!1001 &905690286432907274
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -18,6 +18,6 @@ namespace Economy
         public void AddItems(int value) => Count += IsValidValue(value) ? value : 0;
         public void RemoveItems(int value) => Count += IsValidValue(value) && CanRemoveValue(value) ? -value : 0;
         private bool IsValidValue(int value) => value > 0;
-        private bool CanRemoveValue(int value) => value >= Count;
+        private bool CanRemoveValue(int value) => value <= Count;
     }
 }

@@ -2,6 +2,7 @@
 using Cam_Settings.Follow;
 using Character.CharacterControllers.AI;
 using Character.ComponentContainer;
+using Global;
 using UI;
 using UnityEngine;
 
@@ -18,9 +19,10 @@ namespace Creators
         {
             _scopeCoverage = GetComponent<ScopeCoverage>();
 
-            CreateUnit();
+            CreateUnit(_unitPrefabBase);
             CreateContainer();
             SetFields(_container);
+            SendSpawnMessage();
         }
 
         protected override void SetController()
@@ -59,6 +61,8 @@ namespace Creators
             personContainer.ManaBar = barContainer.ManaBar;
         }
 
+        private void SendSpawnMessage() => EventBus.OnUnitSpawned?.Invoke(_container);
+        
         private enum TypeController
         {
             PersecutorAI,

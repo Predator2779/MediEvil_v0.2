@@ -2,8 +2,11 @@
 using Character.ComponentContainer;
 using Cinemachine;
 using Economy;
+using Economy.Items;
+using Economy.Items.Souls;
 using UI;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Creators
@@ -14,10 +17,11 @@ namespace Creators
         [SerializeField] protected ValueBarContainer _barContainer;
         [SerializeField] protected Image _weaponUi;
         [SerializeField] private CinemachineVirtualCamera _cinemachine;
+        [SerializeField] private SoulItem _dropSoulsPrefab;
 
         protected override void InstantiateUnitComponents()
         {
-            CreateUnit();
+            CreateUnit(_unitPrefabBase);
             CreateContainer();
             SetFields(_container);
             CreateCamera();
@@ -42,13 +46,22 @@ namespace Creators
         private void SetPlayerFields(PersonContainer personContainer)
         {
             personContainer.Inventory ??= _unit.AddComponent<Inventory>();
-            
+
             personContainer.IsPlayer = true;
             personContainer.SoulBar = _barContainer.SoulBar;
             personContainer.HealthBar = _barContainer.HealthBar;
             personContainer.StaminaBar = _barContainer.StaminaBar;
             personContainer.ManaBar = _barContainer.ManaBar;
             personContainer.WeaponHandler.WeaponUi = _weaponUi;
+            
+            InitDropSouls(personContainer);
+        }
+        
+        private void InitDropSouls(PersonContainer personContainer)
+        {
+            var dropSoulsUnit = Instantiate(_dropSoulsPrefab, transform.position, Quaternion.identity);
+            dropSoulsUnit.gameObject.SetActive(false);
+            personContainer.SoulsHandler = new SoulsHandler(personContainer, dropSoulsUnit);
         }
     }
 }

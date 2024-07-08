@@ -12,23 +12,23 @@ namespace Global
         [SerializeField] private TextFader _diedText;
 
         private PersonContainer _player;
-        private List<PersonContainer> _deadUnits = new List<PersonContainer>();
+        private List<PersonContainer> _enemies = new List<PersonContainer>();
 
         private void Awake()
         {
             EventBus.OnPlayerDied.AddListener(HandleDeath);
-            EventBus.OnUnitDied.AddListener(AddDeadUnit);
+            EventBus.OnUnitSpawned.AddListener(AddSpawnedUnit);
         }
 
         private void OnDestroy()
         {
             EventBus.OnPlayerDied.RemoveListener(HandleDeath);
-            EventBus.OnUnitDied.RemoveListener(AddDeadUnit);
+            EventBus.OnUnitSpawned.RemoveListener(AddSpawnedUnit);
         }
 
-        private void AddDeadUnit(PersonContainer unit)
+        private void AddSpawnedUnit(PersonContainer unit)
         {
-            if (!_deadUnits.Contains(unit)) _deadUnits.Add(unit);
+            if (!_enemies.Contains(unit)) _enemies.Add(unit);
         }
 
         private void HandleDeath(PersonContainer playerUnit)
@@ -60,15 +60,21 @@ namespace Global
         private void Death()
         {
             _diedText.OnFaderIsDone -= Death;
-            RespawnEnemies(); // + выжившие
+            DropPlayerSouls();
+            RespawnEnemies();
             RespawnPlayer();
+        }
+
+        private void DropPlayerSouls()
+        {
+            
         }
 
         private void RespawnEnemies()
         {
-            if (_deadUnits.Count > 0)
-                for (int i = 0; i < _deadUnits.Count; i++)
-                    RespawnUnit(_deadUnits[i]);
+            if (_enemies.Count > 0)
+                for (int i = 0; i < _enemies.Count; i++)
+                    RespawnUnit(_enemies[i]);
         }
 
         private void RespawnPlayer()

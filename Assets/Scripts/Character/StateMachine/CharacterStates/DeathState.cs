@@ -40,7 +40,6 @@ namespace Character.StateMachine.CharacterStates
             PersonContainer.DustEffectPlayer.PlayStep();
 
             if (PersonContainer.IsPlayer) EventBus.OnPlayerDied?.Invoke(PersonContainer);
-            else EventBus.OnUnitDied?.Invoke(PersonContainer);
         }
     }
 }

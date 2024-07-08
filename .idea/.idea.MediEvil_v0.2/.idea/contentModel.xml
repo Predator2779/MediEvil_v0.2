@@ -1332,6 +1332,9 @@
               <e p="Item.cs" t="Include" />
               <e p="ItemData.cs" t="Include" />
               <e p="SoulItem.cs" t="Include" />
+              <e p="Souls" t="Include">
+                <e p="SoulsHandler.cs" t="Include" />
+              </e>
             </e>
             <e p="ItemSet.cs" t="Include" />
             <e p="SoulWallet.cs" t="Include" />

@@ -7,6 +7,7 @@ using Character.ValueStorages;
 using Character.ValueStorages.Bars;
 using Damageables.Weapons;
 using Economy;
+using Economy.Items.Souls;
 using Global;
 using UnityEngine;
 using VFX;
@@ -31,6 +32,7 @@ namespace Character.ComponentContainer
         public ItemHandler ItemHandler { get; set; }
         public WeaponHandler WeaponHandler { get; set; }
         public Inventory Inventory { get; set; }
+        public SoulsHandler SoulsHandler { get; set; }
         public DustEffectPlayer DustEffectPlayer { get; set; }
         public Vector2 StartSpawnPoint { get; set; }
 
@@ -59,14 +61,14 @@ namespace Character.ComponentContainer
 
         private void SetSubscribes() 
         {
-            EventBus.OnSoulPicked.AddListener(SoulWallet.Increase);
+            if (SoulsHandler != null) SoulsHandler.Subscribe();
             if (WeaponHandler != null) ItemHandler.OnWeaponPickedUp += WeaponHandler.EquipWeapon;
             if (Inventory != null) ItemHandler.OnItemPickedUp += Inventory.AddItems;
         }
 
         private void OnDestroy()
         {
-            EventBus.OnSoulPicked.RemoveListener(SoulWallet.Increase);
+            if (SoulsHandler != null) SoulsHandler.Unsubscribe();
             if (WeaponHandler != null) ItemHandler.OnWeaponPickedUp -= WeaponHandler.EquipWeapon;
             if (Inventory != null) ItemHandler.OnItemPickedUp -= Inventory.AddItems;
         }

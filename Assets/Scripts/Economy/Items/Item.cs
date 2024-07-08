@@ -8,7 +8,7 @@ namespace Economy.Items
 
         [field: SerializeField] public ItemData ItemData { get; set; }
 
-        public int Count { get; set; }
+        public int Count { get => _count; set => _count = value; }
 
         public abstract void PickUp();
         public abstract void Put();
