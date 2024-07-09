@@ -31,6 +31,9 @@ namespace Character.CharacterControllers.Inputs
 
         private void CheckConditions()
         {
+            /// для тестов
+            if (UnityEngine.Input.GetKeyUp(KeyCode.K)) _person.Die();
+            
             if (IsFall())
             {
                 Fall();
@@ -119,8 +122,7 @@ namespace Character.CharacterControllers.Inputs
                                  _person.Container.Stamina.CanUse &&
                                  !_person.Container.Movement.IsFall() &&
                                  _person.Container.Movement.IsGrounded();
-
-        // добавить атаку в прыжке (для варриора)
+        
         private bool IsSlide() => _inputHandler.GetVerticalAxis() < 0 &&
                                   _person.Container.Movement.IsGrounded() &&
                                   _person.Container.Movement.CanSlide();

@@ -27,10 +27,11 @@ namespace Creators
         protected abstract void InstantiateUnitComponents();
         protected abstract void Initialize();
 
-        protected void CreateUnit(GameObject unit) => _unit = Instantiate(
-            unit, transform.position,
-            Quaternion.identity,
-            FindOrCreatePath(_path));
+        protected void CreateUnit(GameObject unit)
+        {
+            _unit = Instantiate(unit, transform.position, Quaternion.identity);
+            _unit.transform.SetParent(FindOrCreatePath(_path));
+        }
 
         protected void EnableCreator() => gameObject.SetActive(true);
         protected void DisableCreator() => gameObject.SetActive(false);

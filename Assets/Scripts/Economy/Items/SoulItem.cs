@@ -29,7 +29,7 @@ namespace Economy.Items
             
             if (ItemData.Name == "My Soul") return;
             var scale = Mathf.Clamp(Count / 1000, 0.5f, 3.0f);
-            transform.parent.localScale = new Vector3(scale, scale, scale);
+            transform.localScale = new Vector3(scale, scale, scale);
         }
 
         private void DisableItem() => gameObject.SetActive(false);

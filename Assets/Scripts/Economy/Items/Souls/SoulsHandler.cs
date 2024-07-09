@@ -1,5 +1,6 @@
 ﻿using Character.ComponentContainer;
 using Global;
+using UnityEngine;
 
 namespace Economy.Items.Souls
 {
@@ -19,7 +20,7 @@ namespace Economy.Items.Souls
         public void Subscribe()
         {
             if (_personContainer.SoulWallet != null)
-                _personContainer.ItemHandler.OnSoulPickedUp += PickUpDroppedSouls;
+                _personContainer.ItemHandler.OnSoulPickedUp += PickUpSouls;
 
             EventBus.OnPlayerDied.AddListener(DropSouls);
         }
@@ -27,12 +28,12 @@ namespace Economy.Items.Souls
         public void Unsubscribe()
         {
             if (_personContainer.SoulWallet != null)
-                _personContainer.ItemHandler.OnSoulPickedUp -= PickUpDroppedSouls;
+                _personContainer.ItemHandler.OnSoulPickedUp -= PickUpSouls;
             
             EventBus.OnPlayerDied.RemoveListener(DropSouls);
         }
 
-        private void PickUpDroppedSouls(Item item)
+        private void PickUpSouls(Item item)
         {
             item.ItemData.Name = _soulName;
             _personContainer.Inventory.AddItems(item);
@@ -46,6 +47,13 @@ namespace Economy.Items.Souls
             _droppedSoulsUnit.gameObject.SetActive(true);
             _droppedSoulsUnit.Count = _personContainer.Inventory.TryGetItems(_soulName, out ItemSet set) ? set.Count : 0;
             _personContainer.SoulWallet.Decrease(_droppedSoulsUnit.Count);
+            Test();
+        }
+
+        private void Test()
+        {
+            if (_personContainer.Inventory.TryGetItems(_soulName, out ItemSet set))
+                Debug.Log(set.Count);
         }
     }
 }
