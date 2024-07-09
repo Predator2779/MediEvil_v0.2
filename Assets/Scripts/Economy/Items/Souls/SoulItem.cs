@@ -1,7 +1,6 @@
-﻿using Global;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Economy.Items
+namespace Economy.Items.Souls
 {
     public class SoulItem : Item
     {
@@ -26,8 +25,6 @@ namespace Economy.Items
         private void SetInitParameters()
         {
             _animator = GetComponent<Animator>();
-            
-            if (ItemData.Name == "My Soul") return;
             var scale = Mathf.Clamp(Count / 1000, 0.5f, 3.0f);
             transform.localScale = new Vector3(scale, scale, scale);
         }

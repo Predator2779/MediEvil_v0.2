@@ -327,7 +327,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  <ItemData>k__BackingField: {fileID: 11400000, guid: 05e21f4fe779be04c8b7bc2c96f91074, type: 2}
-  <WeaponData>k__BackingField: {fileID: 11400000, guid: 05e21f4fe779be04c8b7bc2c96f91074, type: 2}
+  <Icon>k__BackingField: {fileID: 21300000, guid: dbf405ceb2b54994f8fbcfac26ac5f6e, type: 3}
+  <Name>k__BackingField: Axe
+  <Description>k__BackingField: "\u0422\u043E\u043F\u043E\u0440"
+  <Price>k__BackingField: 50
   _particles: {fileID: 0}
   _trail: {fileID: 3551809944034092629}
+  <Damage>k__BackingField: 5
+  <AttackRadius>k__BackingField: 1

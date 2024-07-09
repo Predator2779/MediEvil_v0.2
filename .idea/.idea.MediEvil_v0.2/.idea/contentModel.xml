@@ -1322,7 +1322,6 @@
             </e>
             <e p="Weapons" t="Include">
               <e p="Weapon.cs" t="Include" />
-              <e p="WeaponData.cs" t="Include" />
               <e p="WeaponHandler.cs" t="Include" />
             </e>
           </e>
@@ -1330,9 +1329,8 @@
             <e p="Inventory.cs" t="Include" />
             <e p="Items" t="Include">
               <e p="Item.cs" t="Include" />
-              <e p="ItemData.cs" t="Include" />
-              <e p="SoulItem.cs" t="Include" />
               <e p="Souls" t="Include">
+                <e p="SoulItem.cs" t="Include" />
                 <e p="SoulsHandler.cs" t="Include" />
               </e>
             </e>

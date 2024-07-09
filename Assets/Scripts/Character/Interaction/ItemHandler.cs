@@ -2,6 +2,7 @@
 using Damageables.Weapons;
 using Economy;
 using Economy.Items;
+using Economy.Items.Souls;
 using Global;
 using UnityEngine;
 

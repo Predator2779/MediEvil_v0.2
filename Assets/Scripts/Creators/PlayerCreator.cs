@@ -57,9 +57,11 @@ namespace Creators
         
         private void InitDropSouls(PersonContainer personContainer)
         {
+            var mySoulUnit = Instantiate(_dropSoulsPrefab, transform.position, Quaternion.identity);
+            mySoulUnit.gameObject.SetActive(false);  
             var dropSoulsUnit = Instantiate(_dropSoulsPrefab, transform.position, Quaternion.identity);
             dropSoulsUnit.gameObject.SetActive(false);
-            personContainer.SoulsHandler = new SoulsHandler(personContainer, dropSoulsUnit);
+            personContainer.SoulsHandler = new SoulsHandler(personContainer, mySoulUnit, dropSoulsUnit);
         }
     }
 }

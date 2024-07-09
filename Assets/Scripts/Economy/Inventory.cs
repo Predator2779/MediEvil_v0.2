@@ -16,38 +16,38 @@ namespace Economy
 
         public void AddItems(Item item)
         {
-            if (HasItems(item.ItemData.Name, 1)) AddItem(item.ItemData.Name, item.Count);
+            if (HasItems(item.Name, 1)) AddItem(item.Name, item.Count);
             else if (HasFreeSpace()) CreateAndAdd(item, item.Count);
         }
 
-        public bool TryGetItems(string name, int count, out ItemSet set)
+        public bool TryGetItems(string name, int count, out Item item)
         {
-            set = null;
+            item = null;
 
             // если есть предмет с количеством - вернуть
             if (HasItems(name, count))
             {
-                set = GetItemSet(name, count);
+                item = GetItemSet(name, count).Item;
                 RemoveItem(name, count);
                 return true;
             }
 
             // если нет - вернуть сколько есть
-            if (TryGetItems(name, out set))
+            if (TryGetItems(name, out item))
                 return true;
 
             return false;
         }
 
-        public bool TryGetItems(string name, out ItemSet set)
+        public bool TryGetItems(string name, out Item item)
         {
-            set = null;
+            item = null;
 
             // вернуть сколько есть
             if (HasItems(name, 0))
             {
-                set = GetItemSet(name);
-                RemoveItem(name, set.Count);
+                item = GetItemSet(name).Item;
+                RemoveItem(name, item.Count);
                 return true;
             }
 
@@ -65,10 +65,10 @@ namespace Economy
         }
 
         private void RemoveItemAll(string name) => _listItems.Remove(GetItemSet(name));
-        private ItemSet GetItemSet(string name) => _listItems.FirstOrDefault(set => set.Item.ItemData.Name == name);
+        private ItemSet GetItemSet(string name) => _listItems.FirstOrDefault(set => set.Item.Name == name);
 
         private ItemSet GetItemSet(string name, int count) =>
-            _listItems.FirstOrDefault(set => set.Item.ItemData.Name == name && set.Count >= count);
+            _listItems.FirstOrDefault(set => set.Item.Name == name && set.Count >= count);
 
         private bool HasFreeSpace() => _listItems.Count < _size;
     }

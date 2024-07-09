@@ -181,7 +181,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 1
-  <ItemData>k__BackingField: {fileID: 11400000, guid: 7a3b8c9b800a38c41b710545b7750455, type: 2}
-  <WeaponData>k__BackingField: {fileID: 11400000, guid: 7a3b8c9b800a38c41b710545b7750455, type: 2}
+  <Icon>k__BackingField: {fileID: 21300000, guid: 019b025294b03e24daf55b3f58c32a9a, type: 3}
+  <Name>k__BackingField: Katana
+  <Description>k__BackingField: "\u041A\u0430\u0442\u0430\u043D\u0430"
+  <Price>k__BackingField: 100
   _particles: {fileID: 0}
   _trail: {fileID: 0}
+  <Damage>k__BackingField: 5
+  <AttackRadius>k__BackingField: 1

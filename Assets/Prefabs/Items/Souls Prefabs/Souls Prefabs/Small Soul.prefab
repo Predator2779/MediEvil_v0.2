@@ -121,7 +121,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _count: 30
-  <ItemData>k__BackingField: {fileID: 11400000, guid: cd12b79bb16ccb044b606ed3b29c605e, type: 2}
+  <Icon>k__BackingField: {fileID: 0}
+  <Name>k__BackingField: Small Soul
+  <Description>k__BackingField: 
+  <Price>k__BackingField: 1
 --- !u!58 &8970210386204702551
 CircleCollider2D:
   m_ObjectHideFlags: 0

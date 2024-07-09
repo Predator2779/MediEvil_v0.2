@@ -17,7 +17,7 @@ namespace Damageables.Weapons
             CurrentWeapon.PickUp();
             SetPosition(transform.position);
             SetWeaponParent(transform);
-            SetSprite(CurrentWeapon.WeaponData.Icon);
+            SetSprite(CurrentWeapon.Icon);
         }
 
         public void DropWeapon()

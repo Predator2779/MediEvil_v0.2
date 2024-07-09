@@ -43,7 +43,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Fader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/TextFader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ScreenFader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ValueStorages/Bars/ViewBar.cs" />
@@ -72,9 +71,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Builders/UnitBuilder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/AbstractCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/ItemCreator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Damageables/Weapons/WeaponHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Damageables/Weapons/WeaponData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Damageables/Weapons/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/DeathState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Creators/UnitCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Creators/ItemCreator.cs" />
@@ -83,16 +79,20 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Global/DeathManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Global/GlobalConstants.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/ComponentContainer/PersonContainer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Inventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/Interaction/ItemHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/Souls/ItemConverter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/ItemData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Creators/PlayerCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Creators/AbstractUnitCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Creators/AbstractCreator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/SoulItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControllers/Inputs/InputController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/ItemData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/SoulItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Damageables/Weapons/WeaponHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Damageables/Weapons/WeaponData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Damageables/Weapons/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/Souls/SoulItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Creators/PlayerCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/Souls/SoulsHandler.cs" />
       </list>
     </option>
@@ -170,7 +170,7 @@
       <workItem from="1720282120976" duration="3190000" />
       <workItem from="1720448302920" duration="11673000" />
       <workItem from="1720547954354" duration="629000" />
-      <workItem from="1720548913251" duration="1790000" />
+      <workItem from="1720548913251" duration="4514000" />
     </task>
     <servers />
   </component>
@@ -225,10 +225,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="496" y="243" key="run.anything.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1719479657970" />
-    <state x="545" y="227" width="672" height="685" key="search.everywhere.popup" timestamp="1720549468934">
+    <state x="545" y="227" width="672" height="685" key="search.everywhere.popup" timestamp="1720552540868">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="545" y="227" width="672" height="685" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1720549468934" />
+    <state x="545" y="227" width="672" height="685" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1720552540868" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1715875709886" />
   </component>
 </project>

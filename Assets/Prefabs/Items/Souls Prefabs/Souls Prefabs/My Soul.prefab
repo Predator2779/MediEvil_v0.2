@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4444134981984244165}
   - component: {fileID: 8771837221527894142}
   m_Layer: 13
-  m_Name: Drop Souls
+  m_Name: My Soul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,8 +120,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 877ec0d164aa40cf863cbaaca293afc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _count: 30
-  <ItemData>k__BackingField: {fileID: 11400000, guid: f2fdf45bfc2edec40ab8cd59289928f7, type: 2}
+  _count: 1
+  <Icon>k__BackingField: {fileID: 0}
+  <Name>k__BackingField: My Soul
+  <Description>k__BackingField: 
+  <Price>k__BackingField: 1
 --- !u!58 &8771837221527894142
 CircleCollider2D:
   m_ObjectHideFlags: 0
