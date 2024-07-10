@@ -73,7 +73,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Builders/Creators/ItemCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/StateMachine/CharacterStates/DeathState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Creators/UnitCreator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Creators/ItemCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/ItemSet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Global/EventBus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Global/DeathManager.cs" />
@@ -85,7 +84,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Creators/AbstractCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControllers/Inputs/InputController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/ItemData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/SoulItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Damageables/Weapons/WeaponHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Damageables/Weapons/WeaponData.cs" />
@@ -94,6 +92,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Creators/PlayerCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/Souls/SoulsHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Economy/Items/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Creators/ItemCreator.cs" />
       </list>
     </option>
   </component>
@@ -171,6 +171,7 @@
       <workItem from="1720448302920" duration="11673000" />
       <workItem from="1720547954354" duration="629000" />
       <workItem from="1720548913251" duration="4514000" />
+      <workItem from="1720602810252" duration="501000" />
     </task>
     <servers />
   </component>

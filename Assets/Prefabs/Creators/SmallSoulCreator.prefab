@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7112189497133044031
+--- !u!1 &4370620139203855998
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,38 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4697762146075881334}
-  - component: {fileID: 5366546492926346499}
+  - component: {fileID: 6881474113556368824}
+  - component: {fileID: 2723410835860866184}
   m_Layer: 0
-  m_Name: SoulCreator
+  m_Name: SmallSoulCreator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4697762146075881334
+--- !u!4 &6881474113556368824
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7112189497133044031}
+  m_GameObject: {fileID: 4370620139203855998}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.98, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 51.782, y: 7.079, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3109171682862934638}
+  - {fileID: 1930665943552457404}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5366546492926346499
+--- !u!114 &2723410835860866184
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7112189497133044031}
+  m_GameObject: {fileID: 4370620139203855998}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10572ffb5a5340c88be697febe156695, type: 3}
@@ -48,15 +48,18 @@ MonoBehaviour:
   _unitPrefabBase: {fileID: 2295926159285460318, guid: 8e75c1a42f2a1214e851d8298e2c82f7, type: 3}
   _countObjects: 1
   _path: SMALL_SOULS
-  _data: {fileID: 11400000, guid: cd12b79bb16ccb044b606ed3b29c605e, type: 2}
-  _itemCount: 30
---- !u!1001 &3103457441414112197
+  _icon: {fileID: 0}
+  _name: Small Soul
+  _description: 
+  _count: 50
+  _price: 1
+--- !u!1001 &1945369530072773399
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 4697762146075881334}
+    m_TransformParent: {fileID: 6881474113556368824}
     m_Modifications:
     - target: {fileID: 14721591061006763, guid: 8e75c1a42f2a1214e851d8298e2c82f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -111,8 +114,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e75c1a42f2a1214e851d8298e2c82f7, type: 3}
---- !u!4 &3109171682862934638 stripped
+--- !u!4 &1930665943552457404 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 14721591061006763, guid: 8e75c1a42f2a1214e851d8298e2c82f7, type: 3}
-  m_PrefabInstance: {fileID: 3103457441414112197}
+  m_PrefabInstance: {fileID: 1945369530072773399}
   m_PrefabAsset: {fileID: 0}
